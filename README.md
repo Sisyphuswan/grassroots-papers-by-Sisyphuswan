@@ -9,3 +9,7 @@ Store thoughts and reflections
 
 
 ## 📂 仓库目录说明
+## 📄 文章列表
+
+- **文章1**：[公平约束下的行为DARH谈判模型](https://sisyphuswan.github.io/grassroots-papers-by-Sisyphuswan/DARH.html)
+
