@@ -16,3 +16,4 @@ I open-source all thoughts, derivations, and charts, hoping this can serve as a 
 
 - **文章1**：[公平约束下的行为DARH谈判模型](https://sisyphuswan.github.io/grassroots-papers-by-Sisyphuswan/公平约束下的行为DARH谈判模型.html)
 - **文章2**：[迷雾、天使与永不消散的车辙](https://sisyphuswan.github.io/grassroots-papers-by-Sisyphuswan/迷雾、天使与永不消散的车辙.html)
+         
