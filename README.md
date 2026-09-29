@@ -21,5 +21,6 @@ I open-source all thoughts, derivations, and charts, hoping this can serve as a 
 - **文章2**: [迷雾、天使与永不消散的车辙](https://sisyphuswan.github.io/grassroots-papers-by-sisyphuswan/迷雾、天使与永不消散的车辙.html) · **English edition**: [Fog, the Angel, and the Indelible Ruts](https://sisyphuswan.github.io/grassroots-papers-by-sisyphuswan/Fog%2C%20the%20Angel%2C%20and%20the%20Indelible%20Ruts.html)
 
 
+
     
 
