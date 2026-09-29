@@ -14,6 +14,6 @@ I open-source all thoughts, derivations, and charts, hoping this can serve as a 
 ## 📂 仓库目录说明 / Repository Contents
 ## 📄 文章列表 / Articles
 
-- **文章1**：[公平约束下的行为DARH谈判模型](https://sisyphuswan.github.io/grassroots-papers-by-Sisyphuswan/公平约束下的行为DARH谈判模型.html)
+- **文章1**：[公平约束下的行为DARH谈判模型](https://sisyphuswan.github.io/grassroots-papers-by-Sisyphuswan/1公平约束下的行为DARH谈判模型.html)
 - **文章2**：[迷雾、天使与永不消散的车辙](https://sisyphuswan.github.io/grassroots-papers-by-Sisyphuswan/迷雾、天使与永不消散的车辙.html) · **English edition**： [Fog the Angel and the Wheel Ruts That Never Fade ](https://sisyphuswan.github.io/grassroots-papers-by-Sisyphuswan/Fog%20the%20Angel%20and%20the%20Wheel%20Ruts%20That%20Never%20Fade.html)
             
