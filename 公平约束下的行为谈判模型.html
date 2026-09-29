@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="generator" content="pandoc 3.10.2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Document</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/Sisyphuswan/grassroots-papers-by-Sisyphuswan/main/style.css" />
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Document</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#二两个数两道墙" id="toc-二两个数两道墙">二、两个数，两道墙</a>
+<ul>
+<li><a href="#第一个数大哥最少要多少" id="toc-第一个数大哥最少要多少">第一个数：大哥最少要多少</a></li>
+<li><a href="#第二个数你最多肯给多少" id="toc-第二个数你最多肯给多少">第二个数：你最多肯给多少</a></li>
+<li><a href="#于是区间出来了" id="toc-于是区间出来了">于是区间出来了</a></li>
+<li><a href="#一个心算法则" id="toc-一个心算法则">一个心算法则</a></li>
+</ul></li>
+<li><a href="#三三种谈崩这是全书最实用的部分" id="toc-三三种谈崩这是全书最实用的部分">三、三种谈崩（这是全书最实用的部分）</a>
+<ul>
+<li><a href="#第一步查锅-锅里有没有米" id="toc-第一步查锅-锅里有没有米">第一步：查锅 —— 锅里有没有米？</a></li>
+<li><a href="#第二步查手-米够端得动吗" id="toc-第二步查手-米够端得动吗">第二步：查手 —— 米够，端得动吗？</a></li>
+<li><a href="#第三步查兜-想签但掏得出来吗" id="toc-第三步查兜-想签但掏得出来吗">第三步：查兜 —— 想签，但掏得出来吗？</a></li>
+<li><a href="#三张诊断表" id="toc-三张诊断表">三张诊断表</a></li>
+</ul></li>
+<li><a href="#四骰子局为什么该谈成的交易反而谈崩" id="toc-四骰子局为什么该谈成的交易反而谈崩">四、骰子局：为什么该谈成的交易反而谈崩</a></li>
+<li><a href="#五公平局为什么赌局变好了你反而愿意少付" id="toc-五公平局为什么赌局变好了你反而愿意少付">五、公平局：为什么赌局变好了，你反而愿意少付</a></li>
+<li><a href="#六什么时候用哪套" id="toc-六什么时候用哪套">六、什么时候用哪套</a>
+<ul>
+<li><a href="#工具一进门之前用" id="toc-工具一进门之前用">工具一：进门之前用</a></li>
+<li><a href="#工具二进门之后用" id="toc-工具二进门之后用">工具二：进门之后用</a></li>
+<li><a href="#五个现实场景怎么套" id="toc-五个现实场景怎么套">五个现实场景怎么套</a></li>
+</ul></li>
+<li><a href="#七三句话总结" id="toc-七三句话总结">七、三句话总结</a></li>
+<li><a href="#darh-附录" id="toc-darh-附录">DARH 附录</a>
+<ul>
+<li><a href="#一个掷硬币的故事配套技术文档学术润色版-v2.5" id="toc-一个掷硬币的故事配套技术文档学术润色版-v2.5">《一个掷硬币的故事》配套技术文档（学术润色版 v2.5）</a></li>
+<li><a href="#附录导读三分钟" id="toc-附录导读三分钟">📖 附录导读（三分钟）</a></li>
+<li><a href="#附录-a-符号术语与一般设定" id="toc-附录-a-符号术语与一般设定">附录 A　符号、术语与一般设定</a>
+<ul>
+<li><a href="#a.1-三个原始输入" id="toc-a.1-三个原始输入">A.1 三个原始输入</a></li>
+<li><a href="#a.2-外来词与缩写按附录出现顺序" id="toc-a.2-外来词与缩写按附录出现顺序">A.2 外来词与缩写（按附录出现顺序）</a></li>
+<li><a href="#a.3-三个符号的读法" id="toc-a.3-三个符号的读法">A.3 三个符号的读法</a></li>
+<li><a href="#a.4-一般设定" id="toc-a.4-一般设定">A.4 一般设定</a></li>
+</ul></li>
+<li><a href="#附录-b-退场侧-i理性锚与公平锚" id="toc-附录-b-退场侧-i理性锚与公平锚">附录 B　退场侧 I：理性锚与公平锚</a>
+<ul>
+<li><a href="#b.1-对方的最低要价" id="toc-b.1-对方的最低要价">B.1 对方的最低要价</a></li>
+<li><a href="#b.2-什么情况下连谈都不用谈" id="toc-b.2-什么情况下连谈都不用谈">B.2 什么情况下连谈都不用谈</a></li>
+</ul></li>
+<li><a href="#附录-c-退场侧-ii心理摩擦与双边区间" id="toc-附录-c-退场侧-ii心理摩擦与双边区间">附录 C　退场侧 II：心理摩擦与双边区间</a>
+<ul>
+<li><a href="#c.1-摩擦项" id="toc-c.1-摩擦项">C.1 摩擦项</a></li>
+<li><a href="#c.2-收缩后的两个边界" id="toc-c.2-收缩后的两个边界">C.2 收缩后的两个边界</a></li>
+</ul></li>
+<li><a href="#附录-d-退场侧-iiil4-现实墙与第三类破裂" id="toc-附录-d-退场侧-iiil4-现实墙与第三类破裂">附录 D　退场侧 III：L4 现实墙与第三类破裂</a>
+<ul>
+<li><a href="#d.1-用骰子局走一遍" id="toc-d.1-用骰子局走一遍">D.1 用骰子局走一遍</a></li>
+<li><a href="#d.2-骰子族的三个分界线" id="toc-d.2-骰子族的三个分界线">D.2 骰子族的三个分界线</a></li>
+</ul></li>
+<li><a href="#附录-e-心理支付标度的递减方程-thetau" id="toc-附录-e-心理支付标度的递减方程-thetau">附录 E　心理支付标度的递减方程 <span class="math inline">\(\theta(u)\)</span></a>
+<ul>
+<li><a href="#e.1-先定义不公平到什么程度" id="toc-e.1-先定义不公平到什么程度">E.1 先定义”不公平到什么程度”</a></li>
+<li><a href="#e.2-行情价怎么随-u-移动" id="toc-e.2-行情价怎么随-u-移动">E.2 行情价怎么随 <span class="math inline">\(u\)</span> 移动</a></li>
+</ul></li>
+<li><a href="#附录-f-入场侧参与门槛与心算口诀" id="toc-附录-f-入场侧参与门槛与心算口诀">附录 F　入场侧：参与门槛与心算口诀</a>
+<ul>
+<li><a href="#f.1-门槛的精确式" id="toc-f.1-门槛的精确式">F.1 门槛的精确式</a></li>
+<li><a href="#f.2-251-是怎么来的三层壳" id="toc-f.2-251-是怎么来的三层壳">F.2 251 是怎么来的：三层壳</a></li>
+<li><a href="#f.3-数值梯五个台阶" id="toc-f.3-数值梯五个台阶">F.3 数值梯：五个台阶</a></li>
+</ul></li>
+<li><a href="#附录-g-统一定理与公平局捷径链" id="toc-附录-g-统一定理与公平局捷径链">附录 G　统一定理与公平局捷径链</a>
+<ul>
+<li><a href="#g.1-定理两个问题一个方程" id="toc-g.1-定理两个问题一个方程">G.1 定理：两个问题，一个方程</a></li>
+</ul></li>
+<li><a href="#附录-h-对偶观察与自相似注记" id="toc-附录-h-对偶观察与自相似注记">附录 H　对偶观察与自相似注记</a></li>
+<li><a href="#附录-i-交叉验证数值表" id="toc-附录-i-交叉验证数值表">附录 I　交叉验证数值表</a></li>
+<li><a href="#附录-j-动态弹性扩展从小额根号到大额次线性与-cpt-对照" id="toc-附录-j-动态弹性扩展从小额根号到大额次线性与-cpt-对照">附录 J　动态弹性扩展：从小额根号到大额次线性（与 CPT 对照）</a></li>
+<li><a href="#附录-k-图表和简单说明" id="toc-附录-k-图表和简单说明">附录 K　图表和简单说明</a>
+<ul>
+<li><a href="#图-1-退出价格曲线硬币基准" id="toc-图-1-退出价格曲线硬币基准">图 1　退出价格曲线（硬币基准）</a></li>
+<li><a href="#图-2-剩余-vs-摩擦同轴" id="toc-图-2-剩余-vs-摩擦同轴">图 2　剩余 vs 摩擦（同轴）</a></li>
+<li><a href="#图-3-统一定理" id="toc-图-3-统一定理">图 3　统一定理</a></li>
+<li><a href="#图-4-骰子-l4-墙全书关键图" id="toc-图-4-骰子-l4-墙全书关键图">图 4　骰子 L4 墙（全书关键图）</a></li>
+<li><a href="#图-5-骰子局全走廊" id="toc-图-5-骰子局全走廊">图 5　骰子局全走廊</a></li>
+<li><a href="#图-6-动态弹性-vs-根号-vs-cpt骰子局扩展" id="toc-图-6-动态弹性-vs-根号-vs-cpt骰子局扩展">图 6　动态弹性 vs 根号 vs CPT（骰子局扩展）</a></li>
+</ul></li>
+<li><a href="#附录-l-场景填法建议" id="toc-附录-l-场景填法建议">附录 L　场景填法建议</a></li>
+<li><a href="#附录-m-实验设计与可证伪预测" id="toc-附录-m-实验设计与可证伪预测">附录 M　实验设计与可证伪预测</a></li>
+<li><a href="#附录-n-参数表措辞纪律与来源注记" id="toc-附录-n-参数表措辞纪律与来源注记">附录 N　参数表、措辞纪律与来源注记</a>
+<ul>
+<li><a href="#n.1-参数表" id="toc-n.1-参数表">N.1 参数表</a></li>
+<li><a href="#n.2-措辞纪律哪些话不许说" id="toc-n.2-措辞纪律哪些话不许说">N.2 措辞纪律（哪些话不许说）</a></li>
+<li><a href="#n.3-来源注记与版本记录" id="toc-n.3-来源注记与版本记录">N.3 来源注记与版本记录</a></li>
+</ul></li>
+<li><a href="#附录-o-理论血缘darh-与经典的对应" id="toc-附录-o-理论血缘darh-与经典的对应">附录 O　理论血缘：DARH 与经典的对应</a></li>
+</ul></li>
+</ul>
+</nav>
+<p>title: 一个掷硬币的故事：为什么“明知吃亏，却不得不签”<br />
+subtitle: 公平约束下的行为谈判模型（DARH 双锚点-根号波动启发式模型，Dual-Anchor Root Heuristic Model）<br />
+version: v2.5001 通俗与学术合并版<br />
+keywords: 损失厌恶；公平约束；谈判区间；结构性破裂；心理性破裂；约束性破裂；被迫签约；预算墙；心理账户<br />
+## 为什么”明知吃亏，却不得不签”</p>
+<p><strong>DARH 谈判模型 · 通俗版正文（定稿 · 润色版 v2.5）</strong></p>
+<blockquote>
+<p>本稿只保留正文。所有公式、推导、参数标定、适用范围与实验设计见配套附录。<br />
+正文规则：除 <code>√G</code> 外不出现任何公式；所有数字取整，所有计量单位以标准元为单位。</p>
+<h1 id="一个掷硬币的故事">一个掷硬币的故事</h1>
+<h2 id="一那-10-块钱">一、那 10 块钱</h2>
+<p>假设你带了100元上街。<br />
+有个大哥拦住你，说他有个不错的赌局：</p>
+</blockquote>
+<blockquote>
+<p>掷一枚硬币。正面你赢 50，反面你输 100。</p>
+</blockquote>
+<p>硬币没问题，赔率有问题。你算一下：</p>
+<ul>
+<li>一半机会赚 50，一半机会亏 100 → <strong>平均每次亏 25 块</strong></li>
+<li>那人不傻，他每局平均赚 25。这是个明摆着坑你的局。</li>
+</ul>
+<p>所以你扭头就走。</p>
+<p>——走不了。</p>
+<p>大哥伸手一拦：想走可以，但你得先问我同不同意。</p>
+<p>这时候你大概率会做一件事：掏出 10 块钱：“大哥，买包烟，放我走。”</p>
+<p>现在请注意接下来发生的事：<strong>大哥必然拒绝。</strong></p>
+<p>不是”可能拒绝”，不是”看他心情”。是必然。</p>
+<p>因为大哥继续拦着你，平均能赚 25。你给他 10 块，等于让他倒亏 15。任何一个会数数的人都不会点头——这跟他贪不贪、脾气好不好，一点关系都没有。</p>
+<p><strong>这个拒绝是算术决定的，不是性格决定的。</strong></p>
+<p>于是你试第二档：给 35 呢？</p>
+<p>大哥秒点头——35 比他继续拦着赚的 25 还多，他凭什么不干。</p>
+<p>但轮到你了：你心里咯噔一下。这一局在你心里的分量是”亏25”——还没开打，给的补偿好像太多了点。心里感觉非常不情愿，感觉如果赌气的话还不如赌一把了。</p>
+<p>你摇头。</p>
+<p>再试第三档：给 50？</p>
+<p>大哥肯定乐意。但你更不干——能赢的钱一共就 50，全给他等于白玩。这不是谈判，这是缴械。</p>
+<p>到这里，你发现问题变了。</p>
+<p>你一开始想问的是”我该给多少钱”。试过 10、35、50 之后，你发现这个问题问不下去了——因为每个数字都撞在一堵墙上：</p>
+<table>
+<thead>
+<tr>
+<th>你的出价</th>
+<th>撞上谁</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>大哥的账</td>
+<td>必然被拒</td>
+</tr>
+<tr>
+<td>35</td>
+<td>你的心理账</td>
+<td>你不想给</td>
+</tr>
+<tr>
+<td>50</td>
+<td>公平感</td>
+<td>这是被抢</td>
+</tr>
+</tbody>
+</table>
+<p>所以真正该问的不是”给多少”，而是：</p>
+<p><strong>我们俩之间，到底有没有一个都能接受的数？</strong></p>
+<p>这就是全部。这本书只讲这一个问题。</p>
+<h2 id="二两个数两道墙">二、两个数，两道墙</h2>
+<p>要回答”有没有”，只需要两个数。</p>
+<h3 id="第一个数大哥最少要多少">第一个数：大哥最少要多少</h3>
+<p><strong>25 块。</strong></p>
+<p>他拒绝你的 10 块钱，用的就是这个数。它的意思很直白：他继续拦着你，平均能赚 25，所以低于 25 他绝不松手。</p>
+<p>我们叫它<strong>对方的底线</strong>。</p>
+<p>记住它的来历：它不是我拍脑袋定的，是”他继续拦着平均能赚多少”算出来的。换一个赌局，它跟着变。</p>
+<h3 id="第二个数你最多肯给多少">第二个数：你最多肯给多少</h3>
+<p>这里要绕一个弯。</p>
+<p>按理说，你最多肯给到”能赢的钱”，也就是 50。</p>
+<p>但如果真要你给 50，你会觉得这不像谈判，像抢劫。</p>
+<p>为什么？因为你的心理账不是这么算的。你的想法是：</p>
+<blockquote>
+<p>“能赢 50 是好事，但那是万一赢了才有的事。<br />
+现在要我掏 50 是确定要掏的。<br />
+拿确定的 50，去换一个万一才有的 50——我又不傻。”</p>
+</blockquote>
+<p><strong>同样一笔钱，确定到手的，比”万一才有”的更重。</strong></p>
+<p>这是人的通病，也是这个模型唯一的心理学前提。</p>
+<p>所以我们给”能赢的钱”打个折。折多少？不用精确。打个”心理折扣”就够了。折扣大约就是<strong>能赢金额的平方根</strong>。</p>
+<p>能赢 50，√50 ≈ 7。所以：</p>
+<p><strong>你的心理天花板 ≈ 50 − 7 = 43</strong></p>
+<p>43 的意思是：“超过这个数，我就觉得被抢了。”</p>
+<h3 id="于是区间出来了">于是区间出来了</h3>
+<ul>
+<li>低于 25：大哥不干（25 是他的<strong>记账底线</strong>；若他也算心理账，真实要价约 32，见本节末尾脚注）</li>
+<li>高于 43：你不干（感觉被抢）</li>
+<li>25–43 之间：两边都还有得赚，这才叫”有得谈”</li>
+</ul>
+<p>这段就是<strong>可成交区间</strong>。</p>
+<blockquote>
+<p><strong>补一句脚注（重要）：</strong> 25 是大哥的<strong>记账底线</strong>。如果他瞅准你怕输、再加点心理溢价（同一条规则，约 √能赢的，此处 7 块），他的<strong>真实要价</strong>是 32，区间就变成 32–43。后面骰子局的下界 37、公平局的下界 10，都是按”真实要价”算的。所以记住两个版本的下界：<strong>记账底线</strong>，和<strong>记账底线加上他的心理溢价</strong>。用哪个，取决于你对面坐的是只认账的大哥，还是同样会算心理账的大哥。</p>
+</blockquote>
+<p>还要分清两条线：<strong>43 是你掀桌的线，但你真正点头的数（心甘）通常比它低</strong>——本局大约三十出头。43 到心甘之间那段，是”不算被抢、但也不值”的地带：门开着，钱包没伸那么远。</p>
+<h3 id="一个心算法则">一个心算法则</h3>
+<ul>
+<li>对方的底线 = 他继续这个局，平均能赚多少（他若索要溢价，再加 √能赢的）</li>
+<li>你的天花板 = 能赢的钱 − √(能赢的钱)</li>
+<li>两个数之间的空隙 = 有没有得谈</li>
+<li>空隙是负的 = 别谈了。属于哪一种”别谈”——锅里没米，还是米够但端不动——第三章按顺序查。</li>
+</ul>
+<p>注意”<strong>有得谈</strong>”不等于”<strong>谈得成</strong>”。25–43 只是”门开着”。具体落在哪儿，取决于谁更耗得起——这属于议价能力，后面再说。</p>
+<h2 id="三三种谈崩这是全书最实用的部分">三、三种谈崩（这是全书最实用的部分）</h2>
+<p>“谈崩”不是一种。是三种。而且<strong>必须按顺序查</strong>。</p>
+<p>这个顺序不能颠倒，因为前一种崩了，后面就不用查了。</p>
+<h3 id="第一步查锅-锅里有没有米">第一步：查锅 —— 锅里有没有米？</h3>
+<p>先问最简单的问题：对方的最低要求，是不是已经高过你最多能给的？</p>
+<p>用上面的例子：大哥要 25 起，你最多给 43。25 &lt; 43，锅里有米。</p>
+<p>但如果赌局换成”赢 25，输 100”呢？</p>
+<ul>
+<li>大哥继续拦着平均能赚 37.5</li>
+<li>你能赢的只有 25，天花板就是 25 − 5 = 20</li>
+<li>大哥要 37.5，你最多给 20。他要求的最低价比你愿意给的上限还高。</li>
+</ul>
+<p>这不是”谈不拢”，是”<strong>没得谈</strong>”。</p>
+<p>锅里没米，煮不出饭。这叫<strong>结构性破裂</strong>。</p>
+<p>关键：这种情况下，<strong>任何谈判技巧都救不了。</strong></p>
+<p>你能改变谈判水平，改不了锅里的米。唯一的出路是改赌局本身——让他少要一点，或者让你能赢多一点。</p>
+<h3 id="第二步查手-米够端得动吗">第二步：查手 —— 米够，端得动吗？</h3>
+<p>假设锅里有米（对方要的 &lt; 你能给的），但只剩一点点呢？</p>
+<p>比如赌局改成”赢 35，输 100”：</p>
+<ul>
+<li>大哥记账要 32.5，你最多给 35（能赢的就这么多）——账面上还剩 2.5 的米</li>
+<li>可心理折扣是两边一起收的：他往上加 6，真实要价 38；你往下削 6，天花板 29</li>
+<li>米只有 2.5，两边各伸一次手，锅就见了底</li>
+</ul>
+<p>账面上米是够的，但人已经饿到手抖，端不动锅。</p>
+<p>这叫<strong>心理性破裂</strong>。</p>
+<p>这和第一种完全不同：锅里有东西（客观上能成交），但双方的情绪成本把它吃光了。</p>
+<p>对策也不同：<strong>结构性破裂要改赌局；心理性破裂要降摩擦</strong>——建立信任、分批执行、找第三方担保、把不确定的事变确定。</p>
+<h3 id="第三步查兜-想签但掏得出来吗">第三步：查兜 —— 想签，但掏得出来吗？</h3>
+<p>前两步都过了：锅里有米，也端得动。这时候还有第三关。</p>
+<p>那就是——你嘴上说愿意给 40，兜里真有 40 吗？</p>
+<p>这里有两道墙：</p>
+<ul>
+<li><strong>第一道，物理的。</strong> 你只有 100 块本金。就算某个局的天花板算出 90（能赢 100 减 √100），真掏钱时也逃不开一条铁律：天花板再高，高不过兜。</li>
+<li><strong>第二道，心理的。</strong> 就算你掏得出 100，掏出 90 的时候手也会抖。掏 10 块、20 块，肉痛但能接受；掏到本金一半左右，就是另一回事——那时候人宁愿继续赌，也不受这个气。</li>
+</ul>
+<p>所以我们再加一条线：<strong>大约本金的一半，是心理上的封顶。</strong></p>
+<p>三道数字一比：理论天花板 43、本金 100、心理封顶 50 → 取最小，<strong>43</strong>。这一关你兜里过得去，墙没有生效。</p>
+<p>但记住这两道墙——下一章的骰子局里，它们会把一条能跑马的区间，压成一条缝。</p>
+<p>如果这三道墙把上限压到了对方底线以下呢？</p>
+<p>那就是：想签，但兜里没有；或者，掏得起，心里过不去。</p>
+<p>这叫<strong>约束性破裂</strong>。</p>
+<h3 id="三张诊断表">三张诊断表</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>查什么</th>
+<th>问什么</th>
+<th>崩了叫什么</th>
+<th>通俗说法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>先查锅</td>
+<td>对方要的 &gt; 我能给的？</td>
+<td>结构性破裂</td>
+<td>锅里没米</td>
+</tr>
+<tr>
+<td>再查手</td>
+<td>还剩的那么点，够双方情绪吃吗？</td>
+<td>心理性破裂</td>
+<td>米够，但端不动</td>
+</tr>
+<tr>
+<td>最后查兜</td>
+<td>我掏得出 / 心里过得了吗？</td>
+<td>约束性破裂</td>
+<td>想签，但兜里没有</td>
+</tr>
+</tbody>
+</table>
+<p><strong>按顺序查，查到哪一步崩，就是哪一类。</strong></p>
+<p>前一步没崩才查下一步。</p>
+<p>为什么这个顺序重要：如果锅里没米，你还在那儿琢磨”是不是我情绪管理不好”，那就完全走错方向了。</p>
+<h2 id="四骰子局为什么该谈成的交易反而谈崩">四、骰子局：为什么该谈成的交易反而谈崩</h2>
+<p>上面讲的都是硬币。现在换成骰子：</p>
+<blockquote>
+<p>掷一枚六面骰子。掷出 6 你就赢 400，否则输 100。</p>
+</blockquote>
+<p>算一下：平均每次亏 16.7。</p>
+<p>注意变化：大哥继续拦着你，平均只赚 16.7 了——他没那么想拦你了，他的记账底线掉到了 17。</p>
+<p>但你能赢的变成了 400！</p>
+<p>用我们的算法：</p>
+<p><strong>你的天花板 = 400 − √400 = 400 − 20 = 380</strong></p>
+<p>380！理论上你愿意付到 380 块来退出这个局。而大哥只要 17 起。中间有 360 多的空间。账面上，这是一笔稳成的生意。</p>
+<p><strong>但现实是——你绝不会付 380。</strong></p>
+<p>为什么？因为前面那两道墙：</p>
+<ul>
+<li>你兜里只有 100，掏不出 380</li>
+<li>掏到本金一半（50）你就受不了了</li>
+</ul>
+<p>所以真实上限被压到 <strong>50</strong>。区间从”17–380”，一下子塌成”17–50”。</p>
+<p>这就是”<strong>断崖式坍缩</strong>”。账面上宽得能跑马，现实里被两道墙夹成一条缝。</p>
+<p>而且这里发生了件很有意思的事：</p>
+<p>大哥记账只要 17 起，但他也知道你怕——加上他的心理溢价 20，<strong>真实要价是 37</strong>。（这里 37 是用”赢头的平方根 <span class="math inline">\(√G\)</span>“粗略算出来的，只为了和硬币那局比着看；真正更细的算法在附录 J。）而你的真实上限是 50。</p>
+<p><strong>37 到 50，只有 13 块的缝。</strong></p>
+<ul>
+<li>大哥开口要 40：能成，但你非常肉痛。</li>
+<li>大哥开口要 60：你直接拒绝，宁可去赌。</li>
+</ul>
+<p>关键在最后这句：60 明明远低于理论上的 380，你为什么反而拒绝？</p>
+<p><strong>因为理论上的 380 是假的。</strong></p>
+<p>真上限早就被你的钱包和心理账户锁死在 50。60 没有”低于天花板”，它已经越过了真实的天花板。</p>
+<p>这就是为什么现实中会有人掀桌子。不是他不懂算账——是他算的账和账面上的账，不是同一本。</p>
+<h2 id="五公平局为什么赌局变好了你反而愿意少付">五、公平局：为什么赌局变好了，你反而愿意少付</h2>
+<p>最后一个例子，也是最反直觉的。</p>
+<p>把赌局改成完全公平：</p>
+<blockquote>
+<p>赢 100，输 100。平均不亏不赚。</p>
+</blockquote>
+<p>问：你愿意付多少退出？比原来（赢 50 输 100）多还是少？</p>
+<p>很多人的第一反应：赢头变大了，应该更愿意付吧？</p>
+<p>错了。<strong>答案是你愿意付得更少。</strong></p>
+<p>两个理由：</p>
+<ol type="1">
+<li><p><strong>这是算术。</strong> 原来大哥继续拦平均能赚 25，现在只能赚 0——公平局他赚不到钱了。所以他的记账底线从 25 掉到 0，加上心理溢价 10，真实要价只有 10。他几乎不拦你了。</p></li>
+<li><p><strong>这是心理。</strong> 原来那个局是”明显吃亏”，你急着脱身。现在这个局不亏不赚——你没必要花钱逃了。恐惧没了，买平安的钱自然就省了。</p></li>
+</ol>
+<p>所以账面区间是：</p>
+<ul>
+<li>大哥底线 10（记账 0 + 溢价 10）</li>
+<li>你的天花板 100 − 10 = 90</li>
+</ul>
+<p>“10–90”，宽得前所未有。</p>
+<p>但为什么你其实不会付 90？因为那两道墙还在：本金 100、心理封顶 50。而比墙更早拦住你的，是你自己的心甘。</p>
+<p>务实一点说，你能接受的数大概在这儿：</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>数</th>
+<th>什么性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td><strong>底线</strong>。公平局他一分钱赚不到，这 10 大半是他的面子钱，你还能再压</td>
+</tr>
+<tr>
+<td>22 左右</td>
+<td><strong>心甘</strong>。你真心愿意付的上限（大约是行情打九折）</td>
+</tr>
+<tr>
+<td>25</td>
+<td><strong>行情</strong>。心理空间对半分，最可能的落点</td>
+</tr>
+<tr>
+<td>30</td>
+<td><strong>无奈</strong>。被压到墙角、对方寸步不让时的极限</td>
+</tr>
+</tbody>
+</table>
+<p>一句话记：<strong>底线 10，心甘 22，行情 25，无奈 30。</strong></p>
+<p><strong>这个”行情 25”不是拍脑袋定的。</strong> 它来自一个<strong>行情系数</strong>：局面越公平，你越能往低了砍；局面越黑，这个数越往上走。公平局是最公平的一端，系数取到最低档 0.25，行情价就是 0.25 × 100 = 25——正好是心理封顶 50 的一半，所以上表说它”对半分”。局面变黑时系数会一路涨到 0.5（行情价 50），余裕就被吃光了。完整写法见附录 E。</p>
+<p>注意最反直觉的一点：赌局从”亏 25”变成”不亏不赚”，理论上限反而从 43 涨到 90——但你的真实支付意愿从三十出头掉到了 22。</p>
+<p><strong>账面空间变大了，真实意愿变小了。</strong></p>
+<p>这两个数走反方向，正是”该成的交易谈不成”的根源：账面上越宽，人越容易误以为”还有得谈”，于是一拖再拖——而真实的心甘线，早就悄悄退到了 22。</p>
+<h2 id="六什么时候用哪套">六、什么时候用哪套</h2>
+<p>你现在手上其实有两套工具，注意别用混：</p>
+<h3 id="工具一进门之前用">工具一：进门之前用</h3>
+<p>问题：“这单生意我该不该接？”</p>
+<p>答法：看能不能翻倍多。</p>
+<p><strong>能赢的钱，大约要 2.5 倍于可能亏的钱，才值得进场。</strong></p>
+<p>这就是”翻倍才玩”线的来历。（精确说是 2.51 倍；再把”输的分量比赢的略重”算进去，是 2.74 倍。日常按 2.5 记足够。）</p>
+<p>低于这个倍数，别进场。进场了就是上面那些故事的主角。</p>
+<h3 id="工具二进门之后用">工具二：进门之后用</h3>
+<p>问题：“我已经在局里了，怎么退？”</p>
+<p>答法：算区间（第二章那两个数），然后按顺序查三种破裂。</p>
+<h3 id="五个现实场景怎么套">五个现实场景怎么套</h3>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>“可能亏的”（本金）</th>
+<th>“可能赢的”（好处）</th>
+<th>大概的把握</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>小供应商被压长账期</td>
+<td>现金流缺口</td>
+<td>保住这个客户</td>
+<td>客户还会继续下单</td>
+</tr>
+<tr>
+<td>债务重组</td>
+<td>可动用的现金</td>
+<td>免掉的那部分债</td>
+<td>债权人会不会全额追</td>
+</tr>
+<tr>
+<td>租客被涨租</td>
+<td>一年房租的涨幅</td>
+<td>不搬家的省事</td>
+<td>房东会不会真换租客</td>
+</tr>
+<tr>
+<td>劳工被降薪</td>
+<td>年薪的降幅</td>
+<td>保住岗位</td>
+<td>公司会不会真裁</td>
+</tr>
+<tr>
+<td>创业者的苛刻条款</td>
+<td>出让的股权/控制权</td>
+<td>活下去</td>
+<td>下一轮还融不融得到</td>
+</tr>
+</tbody>
+</table>
+<p>填法：把<strong>最坏情况的现金损失</strong>填成”本金”，把<strong>最好的结果</strong>填成”能赢的”，把”这事儿成不成”填成”把握”。</p>
+<p>填完就能判断：值得进场吗？进场后区间在哪？会死在三种破裂的哪一种？</p>
+<blockquote>
+<p>⚠️ <strong>一个提醒：</strong> 这类场景里”本金”该怎么算，会直接决定结论。比如小供应商那里，用”现金流缺口”和用”应收账款总额”能差好几倍。附录给了逐场景的建议填法。</p>
+</blockquote>
+<h2 id="七三句话总结">七、三句话总结</h2>
+<ol type="1">
+<li><p>别问”我该付多少”，问”<strong>有没有一个数两边都能接受</strong>”。</p></li>
+<li><p>有没有，只看两个数：对方继续这个局平均能赚多少（他的底线），你能赢的钱减去它的平方根（你的天花板）。</p></li>
+<li><p>谈崩分三种，按顺序查：先查锅有没有米，再查端不端得动，最后查兜里掏不掏得出。查错了种类，就会用错对策。</p></li>
+</ol>
+<p>最后，回到开头那 10 块钱。</p>
+<p>它被拒，不是大哥贪，也不是你怂——只是它低于地板。</p>
+<p>而这本书剩下的全部篇幅，不过是在帮你找那个<strong>不被任何一堵墙拒绝的数</strong>：</p>
+<p>锅里有米，手端得动，兜掏得出。</p>
+<p>找到了，签；找不到，走。</p>
+<p><strong>正文完。</strong></p>
+<p>公式、推导、参数标定、适用范围与实验设计，见附录。</p>
+<h1 id="darh-附录">DARH 附录</h1>
+<h2 id="一个掷硬币的故事配套技术文档学术润色版-v2.5">《一个掷硬币的故事》配套技术文档（学术润色版 v2.5）</h2>
+<blockquote>
+<p>本附录承载正文全部公式、推导、参数标定、数值表、图注、场景填法、实验设计与措辞纪律。<br />
+正文规则：除 √G 外不出现公式；本附录不受此限。每个附录开头附”大白话”框：<strong>不读任何公式，也能知道这一节在说什么、为什么重要。</strong></p>
+</blockquote>
+<h2 id="附录导读三分钟">📖 附录导读（三分钟）</h2>
+<p><strong>三类读者，三种读法：</strong></p>
+<ul>
+<li><strong>只想看懂故事</strong>：每节开头的”大白话”框 + 附录 K 的图注，十五分钟读完，一个公式不用碰。</li>
+<li><strong>想复算数字</strong>：按 A → B/C/D（退场侧）→ F（入场侧）→ G（统一定理）→ I（数值表）的顺序读；所有结论都能用一张计算器重现。除了特别指出，全部用根号作为默认项，以方便骰子和硬币对比。</li>
+<li><strong>审稿或引用</strong>：参数见附录 N，措辞纪律见附录 N，可证伪预测见附录 M。</li>
+</ul>
+<p><strong>全文结构一句话</strong>：退场侧三步（B 锚 → C 摩擦 → D 墙），入场侧一节（F），一个统一定义（G），一份账本（I），六张图（K）。</p>
+<h2 id="附录-a-符号术语与一般设定">附录 A　符号、术语与一般设定</h2>
+<blockquote>
+<p><strong>大白话。</strong> 这一节是<strong>词汇表</strong>。后面所有章节都会重复使用这几个词，所以先把它们一次性解释清楚，读到后面就不用回头查了。</p>
+<p>看不懂公式没关系，看懂这里的中文就行。</p>
+</blockquote>
+<p><strong>先给一张对照表。</strong> 正文说”人话”，附录用符号，两边指的是同一件事。从正文翻到附录时，用这张表对上号：</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>正文里的说法</th>
+<th>附录里的符号</th>
+<th>是什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>大哥的账 / 底线 25</td>
+<td><span class="math inline">\(B\)</span></td>
+<td>理性底线（不带心理修正）</td>
+</tr>
+<tr>
+<td>真实要价 32</td>
+<td><span class="math inline">\(r_{S}\)</span></td>
+<td>真实底线（加过摩擦）</td>
+</tr>
+<tr>
+<td>你的天花板 43</td>
+<td><span class="math inline">\(r_{W}\)</span></td>
+<td>账面天花板（削过摩擦，未加墙）</td>
+</tr>
+<tr>
+<td>现实上限 50</td>
+<td><span class="math inline">\(r_{W}^{\prime}\)</span></td>
+<td>现实天花板（再加两道墙）</td>
+</tr>
+<tr>
+<td>两道墙</td>
+<td><span class="math inline">\(W_{\mathrm{phy}},\ W_{\mathrm{psy}}\)</span></td>
+<td>物理墙（兜里的钱）、心理墙（半本金）</td>
+</tr>
+<tr>
+<td>心理折扣 <span class="math inline">\(\sqrt{G}\)</span></td>
+<td><span class="math inline">\(\Delta\)</span></td>
+<td>心理摩擦</td>
+</tr>
+<tr>
+<td>行情价 25</td>
+<td><span class="math inline">\(S(u)=\theta(u)L\)</span></td>
+<td>心理支付标度</td>
+</tr>
+<tr>
+<td>心甘 22</td>
+<td><span class="math inline">\(0.9\,S\)</span></td>
+<td>行情打九折（来历见附录 E.2）</td>
+</tr>
+<tr>
+<td>能赢的钱 / 可能亏的钱</td>
+<td><span class="math inline">\(G\ /\ L\)</span></td>
+<td>赢头 / 本金</td>
+</tr>
+</tbody>
+</table>
+<p>（正文按自定规则只用 <span class="math inline">\(\sqrt{G}\)</span> 一个公式，所以这些符号只在附录出现；这张表是两边唯一的桥。）</p>
+<h3 id="a.1-三个原始输入">A.1 三个原始输入</h3>
+<p>整个模型只从三个数出发。其余所有符号，都是这三个数的加工品。</p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>中文名</th>
+<th>说的什么事</th>
+<th>硬币局的例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(L\)</span></td>
+<td><strong>本金</strong> / 可能亏的钱</td>
+<td>最坏情况下你要赔出去多少</td>
+<td>100</td>
+</tr>
+<tr>
+<td><span class="math inline">\(G\)</span></td>
+<td><strong>赢头</strong> / 可能赢的钱</td>
+<td>最好情况下你能拿回来多少</td>
+<td>50</td>
+</tr>
+<tr>
+<td><span class="math inline">\(p\)</span></td>
+<td><strong>胜率</strong> / 好事发生的概率</td>
+<td>赢头出现的可能性有多大</td>
+<td>0.5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a.2-外来词与缩写按附录出现顺序">A.2 外来词与缩写（按附录出现顺序）</h3>
+<p>这些词在经济学/心理学文献里是标准说法，但第一次见到的人不会知道是什么。逐个说明：</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>词</th>
+<th>出处</th>
+<th>一句话解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>EV</strong>（期望值）</td>
+<td>基础概率论</td>
+<td><strong>这个赌局平均算下来，你赚还是亏。</strong> 换成中文就是正文第一章的”平均每次亏 25 块”。越大越值得玩，小于零就是亏本局。</td>
+</tr>
+<tr>
+<td><strong>CPT</strong></td>
+<td>Kahneman &amp; Tversky (1979, 1992)</td>
+<td><strong>前景理论</strong>：一套描述”人在不确定下怎么估价”的心理学理论。本模型借它来说明”为什么人会给确定的钱更高的权重”。</td>
+</tr>
+<tr>
+<td><strong>TK92</strong></td>
+<td>Tversky &amp; Kahneman (1992)</td>
+<td>指上面那篇 1992 年论文的<strong>具体参数标定</strong>。本模型直接采用它的一组数值（<span class="math inline">\(\alpha=0.88\)</span> 等），没有自己另设。</td>
+</tr>
+<tr>
+<td><strong>损失厌恶</strong></td>
+<td>CPT 的一部分</td>
+<td><strong>同样一笔钱，赔出去比赚回来的感觉更重。</strong> 参数是 <span class="math inline">\(\lambda\)</span>，约为 2.25，意思是赔 1 块的痛约等于赚 2.25 块的爽。</td>
+</tr>
+<tr>
+<td><strong>TK 权重</strong></td>
+<td>CPT 的一部分</td>
+<td>CPT 里对概率做修正的权重函数 <span class="math inline">\(w^{+},w^{-}\)</span>。通俗说：<strong>人会高估小概率、低估大概率的差别。</strong></td>
+</tr>
+<tr>
+<td><strong>knife-edge</strong>（刀刃区）</td>
+<td>通用比喻</td>
+<td><strong>区间窄到只剩一条缝，稍微一碰就没了。</strong> 本模型里指成交宽度只有几块钱的那一段。正文统一写作”刀刃区”。</td>
+</tr>
+<tr>
+<td><strong>slack</strong>（余裕）</td>
+<td>通用工程/经济用词</td>
+<td><strong>还能让让步的空间。</strong> 余裕消失 = 一分钱都砍不动了。正文统一写作”余裕”。</td>
+</tr>
+<tr>
+<td><strong>odds</strong>（赔率）</td>
+<td>赌博/概率论</td>
+<td><strong>赢头与亏头的比例。</strong> 通俗版说的”翻倍才玩”就是在说赔率。</td>
+</tr>
+<tr>
+<td><strong>width</strong>（成交宽度）</td>
+<td>—</td>
+<td><strong>可以谈的那段区间有多宽</strong>（单位：元）。</td>
+</tr>
+<tr>
+<td><strong>aspiration</strong>（期望落点）</td>
+<td>谈判学</td>
+<td><strong>你希望最后停在哪，不是预测值。</strong> 比如你心里想”能砍到 35 就好”，35 就是你的期望落点。</td>
+</tr>
+<tr>
+<td><strong>L0 / L2 / L3 / L4</strong></td>
+<td>本模型自定</td>
+<td><strong>借用深度标记</strong>：数字越大，偏离经典理论越远。L0 = 完全沿用经典；L2 = 借经典框架但改参数含义；L3 = 类比式扩展；L4 = 本模型新增的行为机制（两道墙）。</td>
+</tr>
+<tr>
+<td><strong>ZOPA / BATNA</strong></td>
+<td>Fisher &amp; Ury (1981)</td>
+<td><strong>谈判学名词</strong>。ZOPA = 双方都能接受的区间；BATNA = 谈崩之后你的替代方案（越好的替代方案，你越不怕谈崩）。</td>
+</tr>
+<tr>
+<td><strong>理性 B</strong></td>
+<td>本模型自定</td>
+<td><strong>不带任何心理修正时的对方底线</strong>。见下面 A.4。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a.3-三个符号的读法">A.3 三个符号的读法</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>符号</th>
+<th>读作</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(\Delta\)</span>（大写 delta）</td>
+<td>“德”</td>
+<td><strong>心理摩擦</strong>：双方各要额外加/减的那一层，<span class="math inline">\(\Delta=\sqrt{G}\)</span></td>
+</tr>
+<tr>
+<td><span class="math inline">\(\theta\)</span>（theta）</td>
+<td>“西塔”</td>
+<td><strong>行情系数</strong>：决定行情价落在哪，取值 0.25–0.5</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\kappa\)</span>（kappa）</td>
+<td>“卡帕”</td>
+<td><strong>公平约束系数</strong>：对方要价与赢头的比例，默认 <span class="math inline">\(\kappa=1\)</span> 即”要求拿全部赢头”</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关于 <span class="math inline">\(\sqrt{G}\)</span> 的量纲与现场心算说明。</strong> 严格说，心理摩擦的量纲应当写成 <span class="math inline">\(\Delta=\sqrt{G\cdot G_{0}}\)</span>，其中 <span class="math inline">\(G_{0}\)</span> 是决策情境下的<strong>基准计价单位</strong>（心理度量基准，默认取 1 个标准货币单位）——这样 <span class="math inline">\(\sqrt{\text{元}\times\text{元}}=\text{元}\)</span>，量纲才自洽。</p>
+<p>本稿采用 <span class="math inline">\(\Delta=\sqrt{G}\)</span>，是把 <span class="math inline">\(G_{0}\)</span> <strong>标准化为 1</strong> 之后的写法。这是遵循<strong>有限理性（Bounded Rationality）与快速节俭启发式</strong>（Gigerenzer et al., 1999）原则做出的<strong>故意简化</strong>：把认知负荷压到最低，以支持谈判现场的直接口算。代价是当赔率跨越大尺度时根号尺会失真——这正是附录 J 的动态弹性展开式要修的问题。</p>
+<h3 id="a.4-一般设定">A.4 一般设定</h3>
+<p>弱势方（要跑的那个人）持有劣势头寸：</p>
+<ul>
+<li>以概率 <span class="math inline">\(p\)</span> 赢 <span class="math inline">\(G&gt;0\)</span>；</li>
+<li>以概率 <span class="math inline">\(1-p\)</span> 输 <span class="math inline">\(L&gt;0\)</span>；</li>
+<li>且 <span class="math inline">\(\mathrm{EV}=pG-(1-p)L&lt;0\)</span>，<strong>即这个局长期算是亏的</strong>（这就是为什么他会想跑）。</li>
+</ul>
+<p>弱势方可以支付一笔退出成本 <span class="math inline">\(C\)</span> 买断这个局；强势方（拦人的那位）决定接不接受。</p>
+<p>本模型是<strong>单边行为反应模型</strong>：核心变量是弱势方在公平约束与破裂威胁下的心理承载与退出意愿。</p>
+<p>强势方不建模为复杂的策略性智能体——他不预判你的心理、不虚张声势、不随你的还价调整。他的行为特征完全由外生规则约束：以客观的理性记账底线 <span class="math inline">\(B\)</span>（期望值）作为不可让步的下界，以公平锚 <span class="math inline">\(M=\kappa G\)</span>（赢头诉求）界定其索要上限；心理摩擦 <span class="math inline">\(\Delta\)</span> 则按对称规则同时作用在两侧区间。</p>
+<p>换言之，<strong>强势方在模型中被抽象为一种“规则驱动的环境阻力”，而非动态博弈方</strong>（类似宏观经济学中将微观主体置于外生价格环境的处理），目的是以最小参数集集中刻画弱势方的破裂机制。</p>
+<p><strong>适用边界</strong>：模型不展开强势方的动态策略反应，亦不展开双方异质性偏误的博弈演化。这是刻意的降维抽象，也是本模型的适用边界——<strong>它回答的是“弱势方在什么条件下不得不签或掀桌”，而非“双方如何进行轮流出价博弈”。</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+<th>标准例（硬币）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(p,\ L,\ G\)</span></td>
+<td>胜率、损失、收益</td>
+<td>0.5, 100, 50</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\mathrm{EV}\)</span></td>
+<td><strong>期望值</strong>（每局平均盈亏，此处为负）</td>
+<td><span class="math inline">\(-25\)</span></td>
+</tr>
+<tr>
+<td><span class="math inline">\(\alpha,\ \lambda\)</span></td>
+<td>CPT 曲率、损失厌恶（TK92 标定）</td>
+<td>0.88, 2.25</td>
+</tr>
+<tr>
+<td><span class="math inline">\(w^{+},\ w^{-}\)</span></td>
+<td>收益/损失概率权重（TK92：<span class="math inline">\(\gamma=0.61,\ \delta=0.69\)</span>）</td>
+<td><span class="math inline">\(w^{+}(0.5)=0.4206,\ w^{-}(0.5)=0.4539\)</span></td>
+</tr>
+<tr>
+<td><span class="math inline">\(B\)</span></td>
+<td><strong>理性底线</strong>：对方不放你走时每局平均能赚到的钱</td>
+<td>25</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\Delta\)</span></td>
+<td>心理摩擦，<span class="math inline">\(=\sqrt{G}\)</span></td>
+<td>7.07</td>
+</tr>
+<tr>
+<td><span class="math inline">\(r_{S}\)</span></td>
+<td><strong>真实底线</strong>：对方加过摩擦之后的最低价</td>
+<td>32.07</td>
+</tr>
+<tr>
+<td><span class="math inline">\(r_{W}\)</span></td>
+<td><strong>账面天花板</strong>：你削过摩擦之后的最高价（未加墙）</td>
+<td>42.93</td>
+</tr>
+<tr>
+<td><span class="math inline">\(r_{W}^{\prime}\)</span></td>
+<td><strong>现实天花板</strong>：再加两道墙之后的上限</td>
+<td>42.93（未触发墙）</td>
+</tr>
+<tr>
+<td><span class="math inline">\(C\)</span></td>
+<td><strong>退出成本</strong>：你为了走愿意付的钱</td>
+<td>待求</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\kappa\)</span></td>
+<td>公平约束系数（<span class="math inline">\(M=\kappa G\)</span>）</td>
+<td>1</td>
+</tr>
+<tr>
+<td><span class="math inline">\(M\)</span></td>
+<td><strong>公平要价</strong>：对方认为自己”公平应得”的份额</td>
+<td>50</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\theta(u)\)</span></td>
+<td>心理支付标度系数（随不公平度变化，附录 E）</td>
+<td>0.25–0.5</td>
+</tr>
+<tr>
+<td><span class="math inline">\(W_{\mathrm{phy}}\)</span></td>
+<td><strong>物理墙</strong>：你兜里即时能掏出的钱</td>
+<td>100</td>
+</tr>
+<tr>
+<td><span class="math inline">\(W_{\mathrm{psy}}\)</span></td>
+<td><strong>心理墙</strong>：掏到多少手会抖，<span class="math inline">\(=0.5L\)</span></td>
+<td>50</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\beta\)</span></td>
+<td>弱势方议价能力</td>
+<td>场景定</td>
+</tr>
+</tbody>
+</table>
+<p><strong>记号纪律</strong>：<span class="math inline">\(W_{\mathrm{psy}}\)</span>（固定封顶墙）与 <span class="math inline">\(\theta(u)\)</span>（随局面移动的行情尺）是两个量，v2.5 起分列，不再共用字母。</p>
+<p><strong>老版本遗留说明</strong>：v2.5 之前的稿子里，<span class="math inline">\(\theta\)</span> 曾被当作固定常数使用，<span class="math inline">\(\mathrm{EV}\)</span> 曾被写作”期望收益”而没有中文解释。本版起：<span class="math inline">\(\theta\)</span> 单独指”行情系数”，<span class="math inline">\(\mathrm{EV}\)</span> 统一译作”期望值”并在首次出现处给定义。</p>
+<h2 id="附录-b-退场侧-i理性锚与公平锚">附录 B　退场侧 I：理性锚与公平锚</h2>
+<blockquote>
+<p><strong>大白话。</strong> 对方的底线不是”他想要多少”，而是”他放你走会不会亏”。</p>
+<p>具体算法只有一步：他继续拦着你，平均每局赚多少，低于这个数他就不会松手。这个数由赌局本身决定，和他的性格、脾气、谈判水平全无关系。</p>
+<p>所以换一个赌局，底线跟着变。这一节就是把这句话写成公式，并找出”连底线都高过你上限”的那条临界线。</p>
+</blockquote>
+<h3 id="b.1-对方的最低要价">B.1 对方的最低要价</h3>
+<p><span class="math display">\[B=(1-p)L-pG,\qquad M=\kappa G \tag{B.1}\]</span></p>
+<p>这两个式子分别是什么：</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>符号</th>
+<th>中文名</th>
+<th>怎么理解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(B\)</span></td>
+<td><strong>理性底线</strong></td>
+<td>对方不放你走、继续拦着，平均每局能赚多少。低于这个数放你走，他自己就亏。</td>
+</tr>
+<tr>
+<td><span class="math inline">\(M\)</span></td>
+<td><strong>公平要价</strong></td>
+<td>对方认为自己”公平该得”多少，<span class="math inline">\(M=\kappa G\)</span>。默认 <span class="math inline">\(\kappa=1\)</span>，即”赢头全归我”。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对照正文</strong>：硬币局 <span class="math inline">\(L=100,\ G=50,\ p=0.5\)</span>，代入得 <span class="math inline">\(B=0.5\times100-0.5\times50=25\)</span>。这就是正文第一章那句”他继续拦着平均能赚 25”。</p>
+<h3 id="b.2-什么情况下连谈都不用谈">B.2 什么情况下连谈都不用谈</h3>
+<p><strong>结构性破裂</strong>的条件是 <span class="math inline">\(M&lt;B\)</span>——<strong>对方公平要价比他的底线还低</strong>，说明他压根不会提这个价，锅里的米根本不存在。</p>
+<p>反过来问”赢头 <span class="math inline">\(G\)</span> 要小到什么程度，才会出现这种情况”，就得到临界值 <span class="math inline">\(G^{*}_{\mathrm{entry}}\)</span>：</p>
+<p><span class="math display">\[\kappa G=(1-p)L-pG \;\Longrightarrow\; G^{*}_{\mathrm{entry}}=\frac{(1-p)L}{\kappa+p} \tag{B.2}\]</span></p>
+<p><strong>读法</strong>：<span class="math inline">\(G\)</span> 低于 <span class="math inline">\(G^{*}_{\mathrm{entry}}\)</span> 时，锅里的米就没了，属于结构性破裂。</p>
+<table>
+<thead>
+<tr>
+<th>局</th>
+<th>代入</th>
+<th><span class="math inline">\(G^{*}_{\mathrm{entry}}\)</span></th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>硬币</td>
+<td><span class="math inline">\(50/1.5\)</span></td>
+<td>33.33</td>
+<td>赢头低于 33 就没得谈</td>
+</tr>
+<tr>
+<td>骰子</td>
+<td><span class="math inline">\(83.33/1.1\overline{6}\)</span></td>
+<td>71.4</td>
+<td>赢头低于 71 就没得谈</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意</strong>：这里算的是”账面”上的临界点。加上心理摩擦后，真正的分界会往后移（见下两节）。</p>
+<h2 id="附录-c-退场侧-ii心理摩擦与双边区间">附录 C　退场侧 II：心理摩擦与双边区间</h2>
+<blockquote>
+<p><strong>大白话。</strong> 除了账面上的底线和天花板，双方各自还有一层”心理成本”，大小是 <span class="math inline">\(\sqrt{G}\)</span>。</p>
+<p>它的作用方向是<strong>两边同时收缩</strong>：对方往上加一层（要价变高），你往下削一层（愿意给的上限变低）。账面上的空间如果本来就不宽，这一挤就没了——这就是”心理性破裂”：客观上有得谈，但情绪把它吃光了。</p>
+<p>这一节给出收缩后的两个新边界，以及”空间被吃光”的临界点。</p>
+</blockquote>
+<h3 id="c.1-摩擦项">C.1 摩擦项</h3>
+<p><span class="math display">\[\Delta=\sqrt{G} \tag{C.1}\]</span></p>
+<p><strong>这一项为什么长这样</strong>：它是个<strong>化简用的经验公式</strong>，不是从理论上推出来的（下面”纪律”会再强调一次）。选 <span class="math inline">\(\sqrt{G}\)</span> 是因为它满足两个要求：</p>
+<ul>
+<li>赢头越大，心理摩擦越大（但要越来越慢，不能线性涨）；</li>
+<li>用起来能心算。</li>
+</ul>
+<p><strong>方向是关键</strong>：<span class="math inline">\(\Delta\)</span> 同时作用在两侧，但方向相反——</p>
+<ul>
+<li>对方<strong>往上加</strong>：要价从 <span class="math inline">\(B\)</span> 升到 <span class="math inline">\(B+\Delta\)</span>；</li>
+<li>你<strong>往下削</strong>：天花板从 <span class="math inline">\(M\)</span> 降到 <span class="math inline">\(M-\Delta\)</span>。</li>
+</ul>
+<p>两边各动一下，中间的空间就被吃掉 <span class="math inline">\(2\Delta\)</span>。</p>
+<blockquote>
+<p><strong>旁注（非主线，供后续扩展）。</strong> 一个<strong>等分的理想化写法</strong>——若把锅里的米 <span class="math inline">\(M-B\)</span> 等分成三份：</p>
+<p><span class="math display">\[B \;\le\; B+\frac{M-B}{3} \;\le\; B+\frac{2(M-B)}{3} \;\le\; M\]</span></p>
+<p>读法：<strong>左段可接受、中段可谈判、右段不可接受</strong>。它等价于假设两侧摩擦各占整段的三分之一，即 <span class="math inline">\(\Delta=(M-B)/3\)</span>。</p>
+<p><strong>使用限制。</strong> 真实摩擦是 <span class="math inline">\(\Delta=\sqrt{G}\)</span>，不是 <span class="math inline">\((M-B)/3\)</span>，两者只在个别标定局附近重合——硬币族恰好落在 <span class="math inline">\(G\approx47\)</span>（本稿用的 <span class="math inline">\(G=50\)</span> 距它只差 6%，所以看起来成立），骰子族要到 <span class="math inline">\(G\approx97\)</span>，而本稿的骰子局是 <span class="math inline">\(G=400\)</span>，偏差已放大到六倍以上。<strong>所以这条链只能当心算口诀，不可外推。</strong></p>
+<p><strong>为什么仍保留。</strong> 一是便于快速估个数量级；二是它是后续把两侧摩擦不对称化（<span class="math inline">\(\Delta_{\text{强}}\neq\Delta_{\text{弱}}\)</span>）时的<strong>基准情形</strong>——等分本身就等价于”两侧心理完全相等”这一理想假设。本稿只把它作为理想状况记录，不并入主线。</p>
+</blockquote>
+<h3 id="c.2-收缩后的两个边界">C.2 收缩后的两个边界</h3>
+<p><span class="math display">\[r_{S}=B+\Delta,\qquad r_{W}=M-\Delta,\qquad \mathrm{width}=\max\left(M-B-2\Delta,\ 0\right) \tag{C.2}\]</span></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>符号</th>
+<th>中文名</th>
+<th>含义</th>
+<th>硬币局（<span class="math inline">\(G=50\)</span>）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(r_{S}\)</span></td>
+<td><strong>真实底线</strong></td>
+<td>对方加了摩擦之后的最低价</td>
+<td><span class="math inline">\(25+7.07=32.07\)</span></td>
+</tr>
+<tr>
+<td><span class="math inline">\(r_{W}\)</span></td>
+<td><strong>账面天花板</strong></td>
+<td>你削了摩擦之后的最高价</td>
+<td><span class="math inline">\(50-7.07=42.93\)</span></td>
+</tr>
+<tr>
+<td><span class="math inline">\(\mathrm{width}\)</span></td>
+<td><strong>成交宽度</strong></td>
+<td>两边界之间还剩多少</td>
+<td><span class="math inline">\(42.93-32.07=10.86\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(\max(\cdot,\ 0)\)</span> 的作用：宽度不能为负。算出来是负数时记 0，意思是”没有可谈空间”。</p>
+<p><strong>心理性破裂</strong>：<span class="math inline">\(M\ge B\)</span> 且 <span class="math inline">\(2\Delta&gt;M-B\)</span>。临界赢额（令 <span class="math inline">\(a=\kappa+p,\ b=(1-p)L,\ x=\sqrt{G}\)</span>，解 <span class="math inline">\(ax^{2}-2x-b=0\)</span>）：</p>
+<p><span class="math display">\[G_{\psi}=\left(\frac{1+\sqrt{1+ab}}{a}\right)^{2} \tag{C.3}\]</span></p>
+<p>硬币：<span class="math inline">\(1.5x^{2}-2x-50=0\Rightarrow x=6.479\Rightarrow G_{\psi}\approx41.97\)</span>；骰子：<span class="math inline">\(G_{\psi}\approx87.5\)</span>。</p>
+<p><strong>成交价</strong>（线性议价）：</p>
+<p><span class="math display">\[C^{*}=\beta\, r_{S}+(1-\beta)\, r_{W} \tag{C.4}\]</span></p>
+<p>硬币 <span class="math inline">\(G=50\)</span>：<span class="math inline">\([r_{S},r_{W}]=[32.07,\ 42.93]\)</span>；<span class="math inline">\(\beta=0.5\Rightarrow C^{*}=37.5\)</span>。正文”记账版”区间 <span class="math inline">\([B,\ M-\Delta]=[25,\ 42.93]\)</span> 为强势方不索要溢价时的宽版本（正文第二章脚注）。</p>
+<h2 id="附录-d-退场侧-iiil4-现实墙与第三类破裂">附录 D　退场侧 III：L4 现实墙与第三类破裂</h2>
+<blockquote>
+<p><strong>大白话。</strong> 前两节算出的边界都还是”账面数”。真到掏钱时，还有两道硬约束：</p>
+<ul>
+<li><strong>钱包</strong>：你兜里就这么多，天花板算得再高也超不过它。</li>
+<li><strong>心理封顶</strong>：大约本金的一半。掏到这个数，人宁可继续赌也不受这个气。</li>
+</ul>
+<p>两道墙的作用方式和心理摩擦不同：摩擦是”两边各收缩一点”，墙是”直接砍到某个数以下”。所以账面区间一旦很宽，砍完可能只剩一条缝——骰子局就是这样：账面 17–380，砍完 37–50。</p>
+<p>这一节给出砍完之后的区间，以及”砍到连对方底线都不够”的判定条件（约束性破裂）。</p>
+</blockquote>
+<p><span class="math display">\[W_{\mathrm{phy}}=\text{可即时支付财富},\qquad W_{\mathrm{psy}}=0.5\,L \quad (\text{半本金墙，常数})\]</span></p>
+<p><span class="math display">\[r_{W}^{\prime}=\min\left(M-\Delta,\ W_{\mathrm{phy}},\ W_{\mathrm{psy}}\right) \tag{D.1}\]</span></p>
+<p><strong>约束性（可行性）破裂</strong>：<span class="math inline">\(r_{W}^{\prime}&lt;r_{S}\)</span>。</p>
+<p><strong>关于 <span class="math inline">\(W_{\mathrm{psy}}=0.5L\)</span> 的锚点说明（经验值，非推导）。</strong> 取 <span class="math inline">\(0.5L\)</span> 是一个<strong>经验锚点</strong>，不是从理论推出来的。它的直觉含义是”<strong>止损与对抗的分水岭</strong>”：当买断成本逼近可能亏损的一半时，“肉痛但花钱买平安”与”索性掀桌搏一把”这两种选择的心理分量开始接近——掏到这个数，人宁可继续赌也不受这个气。</p>
+<p><strong>它是启发式标准值，不是定理。</strong> 现实中该比例随个体的流动性约束与风险承受度在 <span class="math inline">\(0.4L\sim0.6L\)</span> 之间波动，本模型取对称中点 <span class="math inline">\(0.5\)</span>。</p>
+<p><strong>结论对取值不敏感（可检验）。</strong> 以骰子局（<span class="math inline">\(L=100,\ G=400\)</span>）为例：</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math inline">\(W_{\mathrm{psy}}\)</span></th>
+<th>现实上限 <span class="math inline">\(r_{W}^{\prime}\)</span></th>
+<th>成交宽度</th>
+<th>约束性破裂门槛 <span class="math inline">\(G_{L4}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(0.4L=40\)</span></td>
+<td>40</td>
+<td>3.3</td>
+<td><span class="math inline">\(\approx376\)</span></td>
+</tr>
+<tr>
+<td><span class="math inline">\(\mathbf{0.5L=50}\)</span></td>
+<td><strong>50</strong></td>
+<td><strong>13.3</strong></td>
+<td><strong><span class="math inline">\(\approx305\)</span></strong></td>
+</tr>
+<tr>
+<td><span class="math inline">\(0.6L=60\)</span></td>
+<td>60</td>
+<td>23.3</td>
+<td><span class="math inline">\(\approx231\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>三个取值下”账面 380 被砍到几十”的<strong>定性结论不变</strong>，只是缝的宽度与门槛位置移动。所以 <span class="math inline">\(0.5\)</span> 是取值方便，不是结论所依赖的支点。</p>
+<p><strong>一处诚实的边界</strong>：<span class="math inline">\(0.5L\)</span> 是一个<strong>比 CPT 心甘上限更松的封顶</strong>（骰子局 CPT 只肯给到 29.4，而墙允许到 50）。两者冲突时以 CPT 为准，详见附录 J 判定 5。</p>
+<h3 id="d.1-用骰子局走一遍">D.1 用骰子局走一遍</h3>
+<p>参数：<span class="math inline">\(p=1/6,\ G=400,\ L=100\)</span>。按顺序算：</p>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>算什么</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>理性底线 <span class="math inline">\(B\)</span></td>
+<td>16.67</td>
+</tr>
+<tr>
+<td>2</td>
+<td>心理摩擦 <span class="math inline">\(\Delta=\sqrt{400}\)</span></td>
+<td>20</td>
+</tr>
+<tr>
+<td>3</td>
+<td>真实底线 <span class="math inline">\(r_{S}=B+\Delta\)</span></td>
+<td>36.67</td>
+</tr>
+<tr>
+<td>4</td>
+<td>账面天花板 <span class="math inline">\(M-\Delta\)</span></td>
+<td>380</td>
+</tr>
+<tr>
+<td>5</td>
+<td>三道取最小：<span class="math inline">\(\min(380,\ 100,\ 50)\)</span></td>
+<td><strong>50</strong></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[r_{W}^{\prime}=\min(380,\ 100,\ 50)=50\]</span></p>
+<p><strong>第 5 步是全节的关键。</strong> 账面天花板 380 看着很大，但兜里只有 100、心理只认 50，取最小之后真实上限就是 50。区间变成 <span class="math inline">\([36.67,\ 50]\)</span>，即正文说的”37–50 的缝”。</p>
+<p><strong>能不能成交的条件</strong>：真实底线要不高于真实上限，即 <span class="math inline">\(r_{S}\le\min\left(W_{\mathrm{phy}},W_{\mathrm{psy}}\right)\)</span>。本例 <span class="math inline">\(36.67\le50\)</span>，成立 ✓。</p>
+<h3 id="d.2-骰子族的三个分界线">D.2 骰子族的三个分界线</h3>
+<p>把三类破裂各自的临界点排出来：</p>
+<table>
+<thead>
+<tr>
+<th>分界线</th>
+<th>值</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(G^{*}_{\mathrm{entry}}\)</span></td>
+<td>71.4</td>
+<td>低于此值：锅里没米（结构性破裂）</td>
+</tr>
+<tr>
+<td><span class="math inline">\(G_{\psi}\)</span></td>
+<td><span class="math inline">\(\approx87.5\)</span></td>
+<td>高于此值：米够但端不动（心理性破裂）</td>
+</tr>
+<tr>
+<td><span class="math inline">\(G_{L4}\)</span></td>
+<td><span class="math inline">\(\approx305\)</span></td>
+<td>高于此值：墙不再咬住（约束性破裂解除）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>读法</strong>：<span class="math inline">\(G\)</span> 从 0 往右推，先撞 71.4（没米）、再撞 87.5（端不动）、一直到 305 之后墙才松口。</p>
+<p><strong>87.5–305 这一段叫”灰色带”</strong>：理论上算得出成交区间，现实中墙把它压到零。高赔率赌局的常态。</p>
+<h2 id="附录-e-心理支付标度的递减方程-thetau">附录 E　心理支付标度的递减方程 <span class="math inline">\(\theta(u)\)</span></h2>
+<blockquote>
+<p><strong>大白话。</strong> 前面几节里，“心理封顶 50”是一个固定数。但现实中它会变：<strong>赌局越不公平，你越没有砍价的余地。</strong></p>
+<p>可以这样想：公平局里你心里有个”行情价”，大约是 25；局面越黑，这个价越往 50 靠，直到完全没有余地。</p>
+<p>这一节就是把这个”随不公平度移动的行情价”写成一条曲线，并用你手上的四个局（公平局、骰子局、原硬币局、极端局）检验它落点对不对。</p>
+</blockquote>
+<h3 id="e.1-先定义不公平到什么程度">E.1 先定义”不公平到什么程度”</h3>
+<p>要描述”局面有多黑”，需要一个 0 到 1 的刻度。这个刻度就是 <span class="math inline">\(u\)</span>：</p>
+<p><span class="math display">\[u=1-\frac{pG}{(1-p)L}=\frac{B}{(1-p)L}\in[0,1] \tag{E.1}\]</span></p>
+<p><strong>怎么读这个式子</strong>：</p>
+<ul>
+<li>分子 <span class="math inline">\(B\)</span> 是对方的理性底线（他的每局平均赚头）；</li>
+<li>分母 <span class="math inline">\((1-p)L\)</span> 是他每局平均赔的钱；</li>
+<li>两者之比，就是<strong>“他平均每输 1 块，能赚回多少”</strong>——赚得越少，说明这局对他越不划算，对你也就越公平。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><span class="math inline">\(u\)</span></th>
+<th>局面</th>
+<th>硬币局对应</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>完全公平（他不赚不亏）</td>
+<td><span class="math inline">\(G=100\)</span></td>
+</tr>
+<tr>
+<td>1</td>
+<td>只输不赢的极端局</td>
+<td><span class="math inline">\(G\to0\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>硬币局 <span class="math inline">\(p=0.5,\ L=100\)</span> 时，<span class="math inline">\(u\)</span> 简化成 <span class="math inline">\(1-G/100\)</span>，心算方便。</p>
+<h3 id="e.2-行情价怎么随-u-移动">E.2 行情价怎么随 <span class="math inline">\(u\)</span> 移动</h3>
+<p><span class="math display">\[\theta(u)=0.25\left(1+\sqrt{u}\right),\qquad S(u)=\theta(u)\,L \tag{E.2}\]</span></p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>中文名</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(\theta(u)\)</span></td>
+<td><strong>行情系数</strong></td>
+<td>从 0.25 涨到 0.5，决定行情价落在哪</td>
+</tr>
+<tr>
+<td><span class="math inline">\(S(u)\)</span></td>
+<td><strong>行情价</strong></td>
+<td>你心里的”公道价”，<span class="math inline">\(S=\theta L\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>两端取值</strong>（这就是”双锚”）：</p>
+<ul>
+<li><span class="math inline">\(u=0\)</span>（最公平）：<span class="math inline">\(\theta=0.25\)</span>，<span class="math inline">\(S=0.25\times100=25\)</span>——你可以对半砍。</li>
+<li><span class="math inline">\(u=1\)</span>（最黑）：<span class="math inline">\(\theta=0.5\)</span>，<span class="math inline">\(S=0.5\times100=50\)</span>——一分钱砍不动。</li>
+</ul>
+<p><strong>中间怎么走</strong>：用 <span class="math inline">\(\sqrt{u}\)</span> 连起来。选根号的直觉是”损失恐惧在边际上最敏感、随后迅速饱和”，先快后慢，与根号的形状相符。</p>
+<p><span class="math inline">\(S\)</span> 为弱势方的<strong>心理支付标度</strong>（行情/焦点价尺度）：<span class="math inline">\(u=0\)</span> 时 <span class="math inline">\(S=25\)</span>（公平局行情），<span class="math inline">\(u=1\)</span> 时 <span class="math inline">\(S=50\)</span>（= 半本金墙，余裕消失）。<strong>注意</strong>：<span class="math inline">\(S(u)\)</span> 是支付标度（行情尺），不是封顶墙；墙仍由附录 D 定义，两者勿混。</p>
+<p><strong>四锚点检验：</strong></p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>局</th>
+<th><span class="math inline">\(u\)</span></th>
+<th><span class="math inline">\(\theta\)</span></th>
+<th><span class="math inline">\(S=\theta L\)</span></th>
+<th>交叉对照</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公平硬币 <span class="math inline">\(G=100\)</span></td>
+<td>0</td>
+<td>0.250</td>
+<td>25.0</td>
+<td>= 正文”行情 25”；<span class="math inline">\(0.9S=22.5\approx\)</span> CPT 22–23 ✔</td>
+</tr>
+<tr>
+<td>骰子 <span class="math inline">\(G=400\)</span></td>
+<td>0.2</td>
+<td>0.362</td>
+<td>36.2</td>
+<td><span class="math inline">\(\approx r_{S}=36.67\)</span>（差 0.5 元，余裕恰为零，套牢）✔</td>
+</tr>
+<tr>
+<td>原硬币 <span class="math inline">\(G=50\)</span></td>
+<td>0.5</td>
+<td>0.427</td>
+<td>42.7</td>
+<td><span class="math inline">\(\approx M-\Delta=42.93\)</span>（差 0.6%）✔</td>
+</tr>
+<tr>
+<td>无赢面极端 <span class="math inline">\(G\to0\)</span></td>
+<td>1</td>
+<td>0.500</td>
+<td>50.0</td>
+<td>= 半本金墙 ✔</td>
+</tr>
+</tbody>
+</table>
+<p><strong>备选与稳健带</strong>：线性 <span class="math inline">\(\theta=0.25(1+u)\)</span> → 原硬币 37.5、骰子 30；指数 <span class="math inline">\(\theta=0.25\cdot2^{u}\)</span> → 35.4、28.7。报告带：原硬币 <span class="math inline">\(S\in[35,43]\)</span>、骰子 <span class="math inline">\(S\in[29,36]\)</span>。</p>
+<p><strong>解释（折扣消失曲线）</strong>：焦点/墙之比 <span class="math inline">\(h(u)=S/(0.5L)=0.5\left(1+\sqrt{u}\right)\)</span>：<span class="math inline">\(h(0)=0.5\)</span>（公平时还能对半砍），<span class="math inline">\(h(1)=1\)</span>（极端时砍不动）。<strong><span class="math inline">\(\theta\)</span> 从 0.25 涨到 0.5 的过程，就是弱势方议价的余裕额度被不公平度吃光的过程。</strong></p>
+<p><strong>与正文四数链的关系</strong>：22 与 25 取自 <span class="math inline">\(u=0\)</span> 端（心甘 <span class="math inline">\(=0.9S\)</span>、行情 <span class="math inline">\(=S\)</span>）；30 取自 <span class="math inline">\(u=1\)</span> 端墙与底线之中点 <span class="math inline">\((50+10)/2\)</span>，即被压到极端墙时的极限价。四数链 = <span class="math inline">\(\theta\)</span> 曲线两端点的投影。</p>
+<p><strong>关于那个 0.9（心甘折扣）——它不是”随便打个九折”。</strong> 它是<strong>CPT 心甘价与行情价之比</strong>。本局 <span class="math inline">\(S=25\)</span>：</p>
+<ul>
+<li>TK92 真权重：<span class="math inline">\(C=22.30\)</span>，比值 <span class="math inline">\(C/S=0.892\)</span>；</li>
+<li>纯对称权重：<span class="math inline">\(C=23.33\)</span>，比值 <span class="math inline">\(C/S=0.933\)</span>。</li>
+</ul>
+<p><span class="math inline">\(0.9\)</span> 取在这条带内、偏保守的一侧，所以 <span class="math inline">\(0.9S=22.5\)</span> 与 TK 值只差 <span class="math inline">\(0.9\%\)</span>、与对称值差 <span class="math inline">\(-3.5\%\)</span>。</p>
+<p><strong>不要写成”<span class="math inline">\(0.9\approx\alpha\)</span>“。** <span class="math inline">\(\alpha=0.88\)</span> 只是数值上碰巧接近；比值 <span class="math inline">\(C/S\)</span> 会随 <span class="math inline">\(\lambda\)</span> 变，而 <span class="math inline">\(\alpha\)</span> 不变——所以 <span class="math inline">\(0.9\)</span> 应理解为”</strong>由 CPT 标定出来的折扣**“，而不是曲率参数本身。</p>
+<p><strong>还要区分</strong>：附录 F.3 加价链里那个 <span class="math inline">\(225/0.9=250\)</span> 的 <span class="math inline">\(0.9\)</span> 是<strong>另一个东西</strong>（来自 <span class="math inline">\(\frac{1-\alpha}{\alpha}\ln\lambda\approx0.1106\)</span>），与本节的心甘折扣无关，两者不要混用。</p>
+<p><strong>可证伪预测</strong>：局越接近公平（<span class="math inline">\(u\)</span> 越小），心理标度 <span class="math inline">\(S(u)\)</span> 越早低于 <span class="math inline">\(M-\Delta\)</span> 而成为绑定上限。对照表：<span class="math inline">\(G=65\)</span>（<span class="math inline">\(u=0.35\)</span>）：<span class="math inline">\(S=39.8&lt;M-\Delta=56.9\)</span>，墙绑定；<span class="math inline">\(G=45\)</span>（<span class="math inline">\(u=0.55\)</span>）：<span class="math inline">\(S=43.5&gt;M-\Delta=38.3\)</span>，墙不绑定。</p>
+<p><strong>纪律</strong>：<span class="math inline">\(\theta(u)\)</span> 为双锚（25 与 50）插值，<span class="math inline">\(\sqrt{\ }\)</span> 为风格选择而非推导；精确检验以上述撞点为准。</p>
+<h2 id="附录-f-入场侧参与门槛与心算口诀">附录 F　入场侧：参与门槛与心算口诀</h2>
+<blockquote>
+<p><strong>大白话。</strong> 这一节回答一个问题：<strong>这局该不该进？</strong></p>
+<p>判据只有一句：能赢的钱，至少要够亏的钱的 2.5 倍。不够就别进——进了就是正文里那些故事的主角。</p>
+<p>后面做三件事：</p>
+<ol type="1">
+<li>说明 2.5 是从哪来的（把损失厌恶、曲率、概率权重三层拆开相乘）；</li>
+<li>给出三个心算口诀，精度从粗到细；</li>
+<li>明确口诀的适用范围——哪些参数下能用，哪些下会失效。</li>
+</ol>
+</blockquote>
+<h3 id="f.1-门槛的精确式">F.1 门槛的精确式</h3>
+<p><strong>先说这个不等式在问什么</strong>：一手是”赢了能拿多少”（左边），一手是”输了要赔多少”（右边）。两边都按心里的分量称过之后，<strong>赢的那边要够重，你才肯玩</strong>。</p>
+<p><span class="math display">\[w^{+}(p)\,G^{\alpha}\ge w^{-}(1-p)\,\lambda L^{\alpha} \;\Longrightarrow\; G^{*}_{\mathrm{entry}}=L\left[\frac{w^{-}(1-p)}{w^{+}(p)}\,\lambda\right]^{1/\alpha} \tag{F.1}\]</span></p>
+<p>逐项对照：</p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>说的是什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(w^{+}(p)\)</span></td>
+<td>赢的概率 <span class="math inline">\(p\)</span>，经过心理权重修正后变成多重</td>
+</tr>
+<tr>
+<td><span class="math inline">\(G^{\alpha}\)</span></td>
+<td>赢头 <span class="math inline">\(G\)</span>，经过感受曲率修正后变成多重</td>
+</tr>
+<tr>
+<td><span class="math inline">\(w^{-}(1-p)\)</span></td>
+<td>输的概率，经过心理权重修正</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\lambda\)</span></td>
+<td><strong>损失厌恶</strong>：赔钱的分量比赚钱重多少倍（<span class="math inline">\(=2.25\)</span>）</td>
+</tr>
+<tr>
+<td><span class="math inline">\(L^{\alpha}\)</span></td>
+<td>本金，经过曲率修正</td>
+</tr>
+</tbody>
+</table>
+<p><strong>解出 <span class="math inline">\(G^{*}_{\mathrm{entry}}\)</span></strong> 就是”赢头至少要多大才值得进场”。</p>
+<p>硬币局（<span class="math inline">\(p=0.5\)</span>）的巧处：两边概率相等，权重近似对消，式子简化成</p>
+<p><span class="math display">\[G^{*}=\lambda^{1/\alpha}L=100\times2.25^{1.136}\approx251.3\]</span></p>
+<p>用 TK92 全参数算是 <span class="math inline">\(\approx274\)</span>。</p>
+<h3 id="f.2-251-是怎么来的三层壳">F.2 251 是怎么来的：三层壳</h3>
+<p>把 <span class="math inline">\(\lambda=2.25\)</span> 拆开看：<span class="math inline">\(2.25=1.5^{2}\)</span>。这个 1.5 正好是<strong>损失厌恶的平方根</strong>，于是三层心理修正都落在同一个尺度上：</p>
+<p><span class="math display">\[G^{*}/L=\underbrace{1.5}_{\text{损失壳}}\times\underbrace{1.057}_{\text{曲率壳}}\times\underbrace{1.044}_{\text{权重壳}}=1.655 \tag{F.2}\]</span></p>
+<table>
+<thead>
+<tr>
+<th>层</th>
+<th>系数</th>
+<th>说的是什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>损失壳</td>
+<td>1.5</td>
+<td>光是”怕输”就要把门槛抬到 1.5 倍</td>
+</tr>
+<tr>
+<td>曲率壳</td>
+<td>1.057</td>
+<td>加上”感受不均匀”再抬 5.7%</td>
+</tr>
+<tr>
+<td>权重壳</td>
+<td>1.044</td>
+<td>再加上”高估小概率”再抬 4.4%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>总效果</strong>：<span class="math inline">\(1.655^{2}=2.74\)</span> 倍——<strong>所以日常记”2.5 倍”就够了</strong>（精确 2.74）。</p>
+<p><strong>一句必须说清的话</strong>：上面这个分解对应的是<strong>全参数 TK</strong> 门槛 <span class="math inline">\(\approx2.74\)</span>。若概率权重取对称（<span class="math inline">\(w^{+}=w^{-}\)</span>），则权重壳 <span class="math inline">\(=1\)</span>，三层壳退化为 <span class="math inline">\(1.5\times1.057=1.585\)</span>，门槛相应降到 <span class="math inline">\(\approx2.51\)</span>。<strong>所以 2.51 与 2.74 都对，只是参数不同</strong>——2.51 是权重对消后的值（“日常记 2.5 倍”说的就是它），2.74 是全参数值。下面 F.3 的五个台阶正好覆盖这两级。</p>
+<p>换成对数尺度看：后两层壳打包约 <span class="math inline">\(\times1.103\)</span>（约 <span class="math inline">\(+10\%\)</span>）。</p>
+<h3 id="f.3-数值梯五个台阶">F.3 数值梯：五个台阶</h3>
+<p>下面这张表是<strong>同一件事的五种保守程度</strong>。从上往下，每加一层心理修正，门槛就抬高一级：</p>
+<p><strong>数值梯（硬币，<span class="math inline">\(L=100\)</span>）：</strong></p>
+<table>
+<thead>
+<tr>
+<th>根号尺度</th>
+<th>价格尺度</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.000</td>
+<td>100</td>
+<td>L的公平线</td>
+</tr>
+<tr>
+<td>1.414</td>
+<td>200</td>
+<td>民间”翻倍才玩”（朴素 <span class="math inline">\(\lambda\approx2\)</span>，不占梯级）</td>
+</tr>
+<tr>
+<td>1.500</td>
+<td>225</td>
+<td><span class="math inline">\(\lambda L\)</span>（纯损失厌恶）</td>
+</tr>
+<tr>
+<td>1.585</td>
+<td>251.3</td>
+<td><span class="math inline">\(\lambda^{1/\alpha}L\)</span>（+曲率，权重对消）</td>
+</tr>
+<tr>
+<td>1.655</td>
+<td>274</td>
+<td>TK 全参数（+概率权重）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>心算口诀（三级精度）：</strong></p>
+<ol type="1">
+<li><p><strong>加法网格（最粗，但最安全）</strong>：<span class="math inline">\(G^{*}\approx L\left(\sqrt{\lambda}+0.1n\right)^{2},\ n=0,1,2\)</span>。</p>
+<p><span class="math inline">\(\lambda=2.25\)</span> 时得到三个数：<strong>225 / 256 / 289</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>网格值</th>
+<th>与精确值比</th>
+<th>意味着什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>225</td>
+<td>偏低</td>
+<td>最松的线，容易不够</td>
+</tr>
+<tr>
+<td>256</td>
+<td><span class="math inline">\(+1.9\%\)</span></td>
+<td>接近</td>
+</tr>
+<tr>
+<td>289</td>
+<td><span class="math inline">\(+5.5\%\)</span></td>
+<td>最保守</td>
+</tr>
+</tbody>
+</table>
+<p><strong>这三个数都偏高，是故意的。</strong> 因为要价高一点更保险：万一算低了，你可能接下本来该拒绝的局，那就直接亏钱。宁可保守地多要一点。</p>
+<p>网格同时是<strong>括号器</strong>：精确值 251.3 落在 <span class="math inline">\(225\sim256\)</span> 之间，274 落在 <span class="math inline">\(256\sim289\)</span> 之间。看到落点就知道精确值大概在哪。</p>
+<p><strong>换参数时怎么办</strong>：一般 <span class="math inline">\(\lambda\)</span> 下，把式中的 1.5 换成 <span class="math inline">\(\sqrt{\lambda}\)</span> 即可（<span class="math inline">\(\lambda=2\to1.41\)</span>，<span class="math inline">\(\lambda=3\to1.73\)</span>），网格随之平移。</p></li>
+<li><p><strong>加价链（最准）</strong>：225 →÷0.9 250 →×1.1 ≈275；对 251.3/274 各级误差 ≤1%。（精确壳价 ×1.117 与 ×1.090。）</p></li>
+<li><p><strong>单步除法</strong>：<span class="math inline">\(225/0.9=250\)</span>（<span class="math inline">\(-0.5\%\)</span>；因 <span class="math inline">\(\frac{1-\alpha}{\alpha}\ln\lambda=0.1106\approx1/0.9-1\)</span>，对 <span class="math inline">\(\lambda=2.25\)</span> 为数值巧合）；<span class="math inline">\(225/\alpha=255.7\)</span>（<span class="math inline">\(+1.7\%\)</span>）。通用式以 <span class="math inline">\(\lambda^{1/\alpha}\)</span> 为准。</p></li>
+</ol>
+<p><strong>适用域。</strong> <span class="math inline">\(\ln(1+m)=\frac{1-\alpha}{2\alpha}\ln\lambda+\frac{1}{2\alpha}\ln\frac{w^{-}}{w^{+}}\)</span>；<span class="math inline">\(\lambda=2/2.25/3\)</span> 时 <span class="math inline">\(m\approx\)</span> 9.5%/10.4%/12.5%。<span class="math inline">\(\lambda\in[2,3]\)</span> 内口诀可用；<span class="math inline">\(p\ne0.5\)</span> 时赔率进入根号（<span class="math inline">\(\mathrm{odds}^{1/(2\alpha)}\)</span>），0.1 网格失效。</p>
+<p><strong>赔率弹性（线性权重）。</strong> <span class="math inline">\(G^{*}=L\,\lambda^{1/\alpha}\,\mathrm{odds}^{1/\alpha}\)</span>，弹性 <span class="math inline">\(1/\alpha\approx1.136&gt;1\)</span>：<strong>赔率翻倍，补偿 <span class="math inline">\(\times2.2\)</span></strong>（命题）。</p>
+<p><strong>骰子局（<span class="math inline">\(p=1/6\)</span>）的门槛为什么这么高。</strong> 前面硬币局的门槛是 2.5 倍本金；骰子局（赢的概率只有 1/6）要高得多。</p>
+<p>先把可能的结果列出来：</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>算法</th>
+<th>门槛 <span class="math inline">\(G^{*}\)</span></th>
+<th>说的是哪种人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>只看 EV（理性线）</td>
+<td>500</td>
+<td>完全按平均账算，不看概率形状</td>
+</tr>
+<tr>
+<td>线性权重</td>
+<td><span class="math inline">\(\approx1565\)</span></td>
+<td><strong>风险厌恶很强的人</strong>——要求赔率极高才肯碰</td>
+</tr>
+<tr>
+<td>TK 加权</td>
+<td><span class="math inline">\(\approx850\)</span>（带 820–900）</td>
+<td><strong>觉得自己运气可以搏一搏的人</strong>——高估那 1/6 的小概率</td>
+</tr>
+</tbody>
+</table>
+<p>心算方法：线性用 <span class="math inline">\(\approx(1.6\times2.5)^{2}L=1600\)</span>（误差 <span class="math inline">\(+2\%\)</span>）；TK 用 <span class="math inline">\(\approx2.92^{2}L\approx850\)</span>。</p>
+<p><strong>为什么两个算法差这么多</strong>：差别全在”你怎么看待那 1/6 的概率”。把它看得更小（风险厌恶），门槛就翻上去；觉得”没准就中了”（高估小概率），门槛就降下来。彩票生意就是建立在这后一种心理上。</p>
+<p><strong>彩票（<span class="math inline">\(L=2\)</span>，<span class="math inline">\(p=1/17{,}721{,}088\)</span>）。</strong> <span class="math inline">\(w^{-}(1-p)\approx1\)</span>，简化式 <span class="math inline">\(G^{*}=L\left(\lambda/w^{+}(p)\right)^{1/\alpha}\)</span> 才合法；<span class="math inline">\(\gamma=0.61\)</span> 得 <span class="math inline">\(\approx5\times10^{5}\)</span>（<span class="math inline">\(\gamma=0.65\)</span> 约 <span class="math inline">\(1.1\times10^{6}\)</span>，强 <span class="math inline">\(\gamma\)</span> 敏感，报告带）。数学公平线 <span class="math inline">\(\approx3.5\times10^{7}\)</span>。实际头奖为数学线零头、心理线 10–40 倍——<strong>彩票业定价在对 <span class="math inline">\(w^{+}\)</span> 收益的高估端，对赌协议定价在 <span class="math inline">\(\lambda\)</span> 损失厌恶端</strong>。</p>
+<h2 id="附录-g-统一定理与公平局捷径链">附录 G　统一定理与公平局捷径链</h2>
+<blockquote>
+<p><strong>大白话。</strong> 这一节把两个看起来无关的问题合并成一个：</p>
+<ul>
+<li>进场侧问：“最少赢多少，我才肯玩？”</li>
+<li>退场侧问：“赢到多少，我就一分钱都不肯付了？”</li>
+</ul>
+<p>答案是：<strong>这两个问题是同一条曲线的两种读法。</strong> 退出意愿随赢额下降，降到零的那一点，就是进场门槛。</p>
+<p>所以进场门槛不是新参数，它一直藏在你自己的退出曲线里——把图 1 的曲线顺势延长，穿过零的位置就是门槛。</p>
+</blockquote>
+<h3 id="g.1-定理两个问题一个方程">G.1 定理：两个问题，一个方程</h3>
+<p><strong>先说这个方程在描述什么</strong>：<span class="math inline">\(C(G)\)</span> 是”给定赢头 <span class="math inline">\(G\)</span>，你愿意付多少退出费”。这个数随 <span class="math inline">\(G\)</span> 变大而变小——赢头越大，你越不怕这个局，愿意付的钱自然越少。</p>
+<p>退出意愿满足：</p>
+<p><span class="math display">\[\lambda C^{\alpha}=w^{-}\lambda L^{\alpha}-w^{+}G^{\alpha}\]</span></p>
+<p>整理后解出 <span class="math inline">\(C\)</span>：</p>
+<p><span class="math display">\[C(G)=\left[w^{-}L^{\alpha}-\frac{w^{+}}{\lambda}G^{\alpha}\right]^{1/\alpha} \tag{G.1}\]</span></p>
+<p><strong>为什么它同时是”进场门槛”</strong>：令 <span class="math inline">\(C=0\)</span>，等价于下面四句话——</p>
+<p><span class="math display">\[C=0 \;\Longleftrightarrow\; \text{前景价值}=0 \;\Longleftrightarrow\; \text{与&quot;不玩&quot;无差异} \;\Longleftrightarrow\; \text{恰好够进场条件}\]</span></p>
+<p><strong>所以</strong>：同一个方程，在附录 F 叫”进场门槛”，在这里叫”退出意愿零点”。两次命名，一个东西；对任意权重都精确成立。</p>
+<p><strong>和图的对应</strong>：附录 K 图 1 上那条 CPT 带，就是 <span class="math inline">\(C(G)\)</span> 在 <span class="math inline">\(G\in[20,65]\)</span> 这一段。把它顺势延长，穿过零点的位置落在 251.3（对称权重）或 274（TK 权重）。</p>
+<p><strong>公平局捷径链（<span class="math inline">\(\mathrm{EV}=0\)</span>，<span class="math inline">\(L=100\)</span>）：</strong></p>
+<p><span class="math display">\[\underbrace{10}_{\text{底线}}\;\le\;\underbrace{0.9\times25}_{22.5\ \text{心甘}}\;\le\;\underbrace{25}_{\text{行情}}\;\le\;\underbrace{(50+10)/2}_{30\ \text{无奈}}\]</span></p>
+<p>CPT 校验：对称权重 23.3、TK 22.3 → 带 [22,23] 覆盖”心甘 22”。口诀：<strong>根号打底，九折半墙是心甘，半墙是行情，墙加根号对半分是无奈。</strong>（<span class="math inline">\(0.9\)</span> 的来历见附录 E.2。）</p>
+<p><strong>套牢画像（骰子）</strong>：<span class="math inline">\(G=400\)</span> 低于一切入场线（理性线 500、心理带 820+）<span class="math inline">\(\Rightarrow\)</span> 无人自愿进场；同参数下退出区间 <span class="math inline">\([36.67,50]\)</span> 存在 <span class="math inline">\(\Rightarrow\)</span> <strong>入场拒绝与退场渴望共存，即套牢结构</strong>。</p>
+<h2 id="附录-h-对偶观察与自相似注记">附录 H　对偶观察与自相似注记</h2>
+<blockquote>
+<p><strong>大白话。</strong> 这一节说两件小事，都是”顺便提一句”级别，不是模型主干。</p>
+<p><strong>第一件：进场和退场的伸缩方式不一样。</strong> 进场要价随赔率增长得快（赔率翻倍，要价涨 2.2 倍）；退场摩擦随赌局规模增长得慢（大约是平方根）。既然规律不同，就只说两者”互为对照”，不说它们是同一个机制。</p>
+<p><strong>第二件：有两个数字碰巧接近重合。</strong> 这是参数选得巧，不是模型的结构性质——换一组参数立刻分开。模型不依赖它，所以专门标注一下，免得被误当成结论。</p>
+</blockquote>
+<ul>
+<li><strong>对偶观察</strong>（只作对照，不写成”同源定理”）。两侧的伸缩规律不同：</li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>由哪一侧定价</th>
+<th>曲线形状</th>
+<th>弹性</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>入场溢价</td>
+<td>损失侧</td>
+<td>凸（涨得越来越快）</td>
+<td><span class="math inline">\(1/\alpha\approx1.136\)</span></td>
+<td>可推导</td>
+</tr>
+<tr>
+<td>退场摩擦</td>
+<td>收益侧</td>
+<td>凹（涨得越来越慢）</td>
+<td><span class="math inline">\(\tfrac{1}{2}\)</span></td>
+<td>启发式</td>
+</tr>
+</tbody>
+</table>
+<p><strong>读法</strong>：进场要价”赔率翻倍就涨 2.2 倍”，退场摩擦”局大一倍只涨约 1.4 倍”。规律不同，所以只称二者互为对偶，不说它们出自同一机制。<br />
+- <strong>自相似注记</strong>（<strong>参数巧合，不是结构性质</strong>）。标准例中两组边界数值接近：</p>
+<table>
+<thead>
+<tr>
+<th>读法</th>
+<th>下界</th>
+<th>上界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(C\)</span> 空间（付多少钱）</td>
+<td>32.07</td>
+<td>42.93</td>
+</tr>
+<tr>
+<td><span class="math inline">\(G\)</span> 空间（赢多少钱）</td>
+<td>33.33</td>
+<td>41.97</td>
+</tr>
+</tbody>
+</table>
+<p>差只有 <span class="math inline">\(\approx1.3\)</span> 和 <span class="math inline">\(1.0\)</span>。两点必须说清：</p>
+<ol type="1">
+<li><strong>这是硬币局参数选得巧。</strong> 换骰子局立刻分开（71–88 对 37–50）。</li>
+<li><strong>模型不依赖这个重合。</strong> 通俗版说”一个窗口 32–43，两种读法”，只是表述上的便利。</li>
+</ol>
+<h2 id="附录-i-交叉验证数值表">附录 I　交叉验证数值表</h2>
+<blockquote>
+<p><strong>大白话。</strong> 这一节是<strong>账本</strong>：把前面的公式代进三个具体的局（硬币、骰子、公平局），把每一步的数值都列出来。</p>
+<p>用处有两个：</p>
+<ul>
+<li>正文里出现的每个数，都能在这里查到它怎么算出来的；</li>
+<li>想复算的人，可以拿这三张表逐格对照，所有数字用一张计算器就能重现。</li>
+</ul>
+</blockquote>
+<p><strong>硬币（<span class="math inline">\(p=0.5,\ L=100\)</span>）。</strong> 表里每一列的含义：</p>
+<table>
+<thead>
+<tr>
+<th>列</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(G,\ B,\ M\)</span></td>
+<td>赢头、对方理性底线、对方公平要价</td>
+</tr>
+<tr>
+<td><span class="math inline">\(M-B\)</span></td>
+<td>锅里的米（账面空间）</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\Delta\)</span></td>
+<td>心理摩擦</td>
+</tr>
+<tr>
+<td><span class="math inline">\(r_{S},\ r_{W}\)</span></td>
+<td>真实底线、账面天花板</td>
+</tr>
+<tr>
+<td>width</td>
+<td>成交宽度（<strong>元</strong>）</td>
+</tr>
+<tr>
+<td>CPT 带</td>
+<td>严格前景理论算出的心甘价区间</td>
+</tr>
+<tr>
+<td>区域</td>
+<td>落在哪一类：结构 / 心理 / 可成交</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关于 CPT 带</strong>：写成 <span class="math inline">\([C_{0.45},\ C_{0.5}]\)</span>，两端取的<strong>概率权重不同</strong>——</p>
+<ul>
+<li><strong>下界 <span class="math inline">\(C_{0.45}\)</span></strong>：两侧权重都取 <span class="math inline">\(0.45\)</span>（近似 TK 损失侧权重 <span class="math inline">\(w^{-}(0.5)=0.4539\)</span>）。本局给 <strong>29.5</strong>。</li>
+<li><strong>上界 <span class="math inline">\(C_{0.5}\)</span></strong>：两侧权重都取纯对称值 <span class="math inline">\(0.5\)</span>。本局给 <strong>33.2</strong>。</li>
+</ul>
+<p>所以这条带标的是”<strong>从 TK 式权重到完全对称权重</strong>”这一段，不是同一套参数下的误差范围。</p>
+<p><strong>别与附录 J 混</strong>：附录 J 骰子表里写的”对称变体 <span class="math inline">\(\gamma=\delta=0.61\)</span>“是另一套参数（它令概率权重函数本身对称化，在硬币局给 27.3，不是 29.5）。</p>
+<table>
+<thead>
+<tr>
+<th><span class="math inline">\(G\)</span></th>
+<th><span class="math inline">\(B\)</span></th>
+<th><span class="math inline">\(M\)</span></th>
+<th><span class="math inline">\(M-B\)</span></th>
+<th><span class="math inline">\(\Delta\)</span></th>
+<th><span class="math inline">\(r_{S}\)</span></th>
+<th><span class="math inline">\(r_{W}\)</span></th>
+<th>width</th>
+<th>CPT 带</th>
+<th>区域</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>25</td>
+<td>37.5</td>
+<td>25</td>
+<td>−12.5</td>
+<td>5.00</td>
+<td>42.50</td>
+<td>20.00</td>
+<td>0</td>
+<td>[34.4,38.8]</td>
+<td>结构</td>
+</tr>
+<tr>
+<td>35</td>
+<td>32.5</td>
+<td>35</td>
+<td>2.5</td>
+<td>5.92</td>
+<td>38.42</td>
+<td>29.08</td>
+<td>0</td>
+<td>[32.4,36.5]</td>
+<td>心理</td>
+</tr>
+<tr>
+<td>40</td>
+<td>30.0</td>
+<td>40</td>
+<td>10.0</td>
+<td>6.32</td>
+<td>36.32</td>
+<td>33.68</td>
+<td>0</td>
+<td>[31.4,35.4]</td>
+<td>心理</td>
+</tr>
+<tr>
+<td>45</td>
+<td>27.5</td>
+<td>45</td>
+<td>17.5</td>
+<td>6.71</td>
+<td>34.21</td>
+<td>38.29</td>
+<td>4.08</td>
+<td>[30.4,34.3]</td>
+<td>可成交（刀刃区）</td>
+</tr>
+<tr>
+<td>50</td>
+<td>25.0</td>
+<td>50</td>
+<td>25.0</td>
+<td>7.07</td>
+<td>32.07</td>
+<td>42.93</td>
+<td>10.86</td>
+<td>[29.5,33.2]</td>
+<td>可成交</td>
+</tr>
+<tr>
+<td>60</td>
+<td>20.0</td>
+<td>60</td>
+<td>40.0</td>
+<td>7.75</td>
+<td>27.75</td>
+<td>52.25</td>
+<td>24.51</td>
+<td>[27.6,31.1]</td>
+<td>可成交</td>
+</tr>
+</tbody>
+</table>
+<p><strong>骰子（<span class="math inline">\(p=1/6,\ L=100\)</span>）：</strong></p>
+<table>
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 4%" />
+<col style="width: 21%" />
+<col style="width: 52%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math inline">\(G\)</span></th>
+<th><span class="math inline">\(B\)</span></th>
+<th><span class="math inline">\(r_{S}=B+\sqrt{G}\)</span></th>
+<th><span class="math inline">\(r_{W}^{\prime}=\min(M-\sqrt{G},\ 100,\ 50)\)</span></th>
+<th>区域</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50</td>
+<td>75.0</td>
+<td>82.07</td>
+<td>—*</td>
+<td>结构</td>
+</tr>
+<tr>
+<td>80</td>
+<td>70.0</td>
+<td>78.94</td>
+<td>50</td>
+<td>心理</td>
+</tr>
+<tr>
+<td>100</td>
+<td>66.7</td>
+<td>76.67</td>
+<td>50</td>
+<td>对称带开，L4 破裂</td>
+</tr>
+<tr>
+<td>300</td>
+<td>33.3</td>
+<td>50.65</td>
+<td>50</td>
+<td>L4 临界</td>
+</tr>
+<tr>
+<td>400</td>
+<td>16.7</td>
+<td>36.67</td>
+<td>50</td>
+<td>真实成交 [36.67,50]</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><span class="math inline">\(G=50\)</span> 行：公式值 <span class="math inline">\(\min(42.93,100,50)=42.93\)</span>，但 <span class="math inline">\(M=50&lt;B=75\)</span>，区间不存在，故记”—“。</li>
+</ul>
+<p><strong>公平局（<span class="math inline">\(p=0.5,\ G=L=100\)</span>）。</strong> 账面结果：<span class="math inline">\(B=0\)</span>，<span class="math inline">\(M-\Delta=90\)</span>，加墙后上限 50。四数链为 10 / 22.5 / 25 / 30，CPT 带 <span class="math inline">\([22.3,\ 23.3]\)</span>。</p>
+<p><strong>一处需要说明的高估。</strong> 公平局里 <span class="math inline">\(\mathrm{EV}=0\)</span>，意味着强势方持有与你镜像的分布、也同样想退出。但公式 <span class="math inline">\(r_{S}=B+\Delta\)</span> 只算了”他继续博弈的价值”，没算”他也想跑”这件事，所以高估了他的底线。</p>
+<p>修正后的有效自愿成交区大约是 <span class="math inline">\([0\text{–}10,\ 22\text{–}23]\)</span>；而 <span class="math inline">\([10,90]\)</span> 是<strong>要价空间</strong>，不是成交空间。</p>
+<h2 id="附录-j-动态弹性扩展从小额根号到大额次线性与-cpt-对照">附录 J　动态弹性扩展：从小额根号到大额次线性（与 CPT 对照）</h2>
+<blockquote>
+<p><strong>大白话。</strong> 这一节处理一个已知的短板：<span class="math inline">\(\sqrt{G}\)</span> 这把摩擦尺，是按小额赌局标定的。</p>
+<p>赌局变大以后，心理摩擦不再是平方根式增长，而是越来越接近直线增长。这一节就把”尺子会随暴露量变粗”这件事写成一个公式。</p>
+<p>验证方式是<strong>跨局检验</strong>：用硬币局校准出尺子的基准点，用旧的根号方法和动态做对比，再拿到骰子局去看结果——</p>
+<ul>
+<li>新尺子给出的要价是 27，旧尺子给 36；</li>
+<li>严格前景理论算出的心甘上限是 29 左右；</li>
+<li>也就是说：<strong>新尺子（27）落进了理论区间，旧尺子（36）超出去 7 块。</strong></li>
+</ul>
+<p>结论：赌局越大，平方根尺子越像一个要价过高的中介；加入动态弹性后，它被拉回合理区间。</p>
+</blockquote>
+<p><strong>要解决什么问题。</strong> 正文的 <span class="math inline">\(\Delta =\sqrt{G}\)</span> 是按”小额、日常、可心算”的场景标定的。赌局一旦变大，或者涉及生存性风险，这个尺子就不准了。</p>
+<p>原因是摩擦的增长方式变了：小赌局里，心理成本增长得快然后饱和（像平方根）；大赌局里，它更接近匀速增长（像直线）。</p>
+<p><strong>引入一个暴露量。</strong> 为了描述”尺子随暴露量变粗”，先定义心理暴露总量（按线性权重标定）：</p>
+<p><span class="math display">\[S=\pi^{+}(p)\,G+\pi^{-}(1-p)\,\lambda L \tag{J.1}\]</span></p>
+<p>直觉上：<span class="math inline">\(S\)</span> 越大，说明这个赌局在你心里的分量越重，摩擦的增长方式就越接近直线（<span class="math inline">\(S\)</span> 就是<strong>这个局压在你身上的分量</strong>）。</p>
+<p><strong>让弹性随暴露量变化。</strong> 选一个参考基准 <span class="math inline">\((S_{0},\ \Delta_{0})\)</span>，规定局部弹性 <span class="math inline">\(\varepsilon\)</span> 按下式随 <span class="math inline">\(S\)</span> 变化：</p>
+<p><span class="math display">\[\varepsilon(S)=\begin{cases}\gamma_{\mathrm{base}}, &amp; S\le S_{0}\\[4pt] \gamma_{\max}-\left(\gamma_{\max}-\gamma_{\mathrm{base}}\right)\left(\dfrac{S_{0}}{S}\right)^{\omega}, &amp; S&gt;S_{0}\end{cases}\qquad \gamma_{\mathrm{base}}=0.5,\ \gamma_{\max}=1 \tag{J.2}\]</span></p>
+<p>两个区间的含义：</p>
+<ul>
+<li><span class="math inline">\(S\le S_{0}\)</span>（小额区）：弹性固定在 0.5，这就是平方根行为，保留正文的启发式。</li>
+<li><span class="math inline">\(S&gt;S_{0}\)</span>（大额区）：弹性从 0.5 上升，渐近趋向 1。弹性为 1 就是线性增长。</li>
+</ul>
+<p><strong>解出来。</strong> 取 <span class="math inline">\(\omega=1\)</span>，对 <span class="math inline">\(\varepsilon(S)\)</span> 从 <span class="math inline">\(S_{0}\)</span> 到 <span class="math inline">\(S\)</span> 积分，得到封闭形式：</p>
+<p><span class="math display">\[\Delta(S)=\Delta_{0}\left(\frac{S}{S_{0}}\right)\exp\left[\frac{1}{2}\left(\frac{S_{0}}{S}-1\right)\right] \tag{J.3}\]</span></p>
+<p><strong>校准：把原点钉在硬币局。</strong> 用线性权重，硬币局（<span class="math inline">\(L=100,\ G=50\)</span>）的暴露量是：</p>
+<p><span class="math display">\[S_{0}=0.5\times50+0.5\times2.25\times100=137.5,\qquad \Delta_{0}=\sqrt{50}\]</span></p>
+<p>这样选的好处是：<strong>在锚点处，动态摩擦与正文的 <span class="math inline">\(\sqrt{G}\)</span> 严格相等</strong>。所以小额段不需要任何改动，两套算法无缝衔接。</p>
+<p><strong>拿到骰子局检验。</strong> 骰子局（<span class="math inline">\(p=1/6\)</span>）的暴露量随 <span class="math inline">\(G\)</span> 变化：<span class="math inline">\(S=G/6+187.5\)</span>。代入 <span class="math inline">\(G=400\)</span>：</p>
+<table>
+<thead>
+<tr>
+<th>量</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(S\)</span></td>
+<td>254.2</td>
+</tr>
+<tr>
+<td><span class="math inline">\(S/S_{0}\)</span></td>
+<td><span class="math inline">\(\approx1.85\)</span></td>
+</tr>
+<tr>
+<td>局部弹性 <span class="math inline">\(\varepsilon=1-\frac{S_{0}}{2S}\)</span></td>
+<td><span class="math inline">\(\approx0.73\)</span></td>
+</tr>
+<tr>
+<td>动态摩擦 <span class="math inline">\(\Delta_{\mathrm{dyn}}\)</span></td>
+<td>10.39</td>
+</tr>
+<tr>
+<td>对照：<span class="math inline">\(\sqrt{400}\)</span></td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<p><strong>一个必须说明的空间问题。</strong> 弹性是定义在 <span class="math inline">\(S\)</span> 上的，不是定义在 <span class="math inline">\(G\)</span> 上的。骰子族的 <span class="math inline">\(S\)</span> 由损失端主导（损失项 187.5 是常数），所以 <span class="math inline">\(\Delta_{\mathrm{dyn}}(G)\)</span> 在 <span class="math inline">\(G\)</span> 空间近似是个常数（8.4 到 10.4）。</p>
+<p>也就是说：“增长快于根号”这句话在 <span class="math inline">\(S\)</span> 空间成立；在 <span class="math inline">\(G\)</span> 空间，它表现为摩擦相对于 <span class="math inline">\(\sqrt{G}\)</span> 收缩。两个空间说的是同一件事，但用词不能混。</p>
+<p><strong>三方对照（骰子族，<span class="math inline">\(p=1/6\)</span>，<span class="math inline">\(L=100\)</span>）。</strong> CPT 基准取附录 G 定理的骰子形式 <span class="math inline">\(C(G)=\left[w^{-}\!\left(\tfrac{5}{6}\right)L^{\alpha}-\frac{w^{+}(\frac{1}{6})}{\lambda}G^{\alpha}\right]^{1/\alpha}\)</span>（TK92 权重；对称变体 <span class="math inline">\(\gamma=\delta=0.61\)</span> 作带；对照插图见附录 K 图 6）：</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>模型</th>
+<th>强势方下界</th>
+<th>弱势方上限</th>
+<th><span class="math inline">\(G=400\)</span> 成交带</th>
+<th>开窗点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>根号（正文主模型）</td>
+<td><span class="math inline">\(B+\sqrt{G}=36.7\)</span></td>
+<td>墙 50</td>
+<td><span class="math inline">\([36.7,\ 50]\)</span>（宽 13.3）</td>
+<td><span class="math inline">\(G\approx304.7\)</span>（<span class="math inline">\(=G_{L4}\)</span>，同一方程）</td>
+</tr>
+<tr>
+<td>动态弹性（本节）</td>
+<td><span class="math inline">\(B+\Delta_{\mathrm{dyn}}=27.1\)</span></td>
+<td>墙 50</td>
+<td><span class="math inline">\([27.1,\ 50]\)</span>（宽 22.9）</td>
+<td><span class="math inline">\(G\approx258\)</span></td>
+</tr>
+<tr>
+<td>CPT 严格基准</td>
+<td><span class="math inline">\(B=16.7\)</span></td>
+<td><span class="math inline">\(C_{\mathrm{TK}}=29.4\)</span>（带 23.3–29.4）</td>
+<td><span class="math inline">\([16.7,\ 23.3\text{–}29.4]\)</span></td>
+<td><span class="math inline">\(G\approx250\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>判定。</strong> 把三个模型的差异逐条说清：</p>
+<ol type="1">
+<li><strong>动态摩擦与 CPT 相容。</strong> 动态下界 27.1 落在 CPT 权重带内。</li>
+<li><strong>平方根尺子在大局里要价过高。</strong> 根号下界 36.7 超出 CPT 带上缘 7.3 元（<span class="math inline">\(+25\%\)</span>）。</li>
+<li><strong>开窗点提前。</strong> 排序为 <span class="math inline">\(250&lt;258&lt;305\)</span>，动态模型比根号模型提前约 47 元开窗。</li>
+<li><strong>理论天花板 380 是幻觉。</strong> 三个模型在这点上一致；把弹性升到 1（线性），只是线性对线性，不改变”账面上的宽区间不可实现”这一定性结论。</li>
+<li><strong>与正文的分歧（诚实声明）。</strong> 正文说”要价 37 能成”，这个结论依赖墙端 50。严格 CPT 算出的心甘上限是 29.4，所以 37 应当被拒。这是墙启发式与 CPT 之间一个可检验的分歧，已列为附录 M 的预测 6。</li>
+<li><strong>统一定理在骰子族也成立。</strong> CPT 曲线穿零于 <span class="math inline">\(G\approx852\)</span>，与附录 F 算出的骰子门槛 <span class="math inline">\(\approx850\)</span> 相合。</li>
+</ol>
+<p><strong>作用域与保守选择。</strong> 本节是扩展模块，不改动正文主线。几点边界：</p>
+<ul>
+<li><strong>CPT 只用于弱势方上限。</strong> 严格 CPT 下，强势方继续博弈的价值在 <span class="math inline">\(G\gtrsim126\)</span> 后已为负（镜像效应，参见附录 I 公平局注）。所以强势方下界仍取理性 <span class="math inline">\(B\)</span>，这是保守做法。</li>
+<li><strong>一个数值巧合，不是结构关系。</strong> 开窗点 <span class="math inline">\(\approx250\)</span> 与硬币门槛 251.3 同值，纯属巧合。</li>
+<li><strong>所有数字是报告点，不是精确值。</strong> 权重散差约 <span class="math inline">\(\pm5\%\)</span>。</li>
+</ul>
+<p><strong>与附录 M 的接口（预测 6）。</strong> 上述分歧可以直接做成实验：</p>
+<ul>
+<li>骰子型局中，<strong>37 左右的报价</strong>，接受率应显著低于墙模型的预测（墙模型说 50 是上限，所以 37 该被接受），而接近 CPT 的预测（<span class="math inline">\(\approx29\)</span> 是上限）。</li>
+<li><strong>29 附近的报价</strong>，接受率应过半。</li>
+</ul>
+<p>同一组实验即可区分”半本金墙”与”前景理论心甘”这两个弱势方模型。</p>
+<h2 id="附录-k-图表和简单说明">附录 K　图表和简单说明</h2>
+<blockquote>
+<p><strong>大白话。</strong> 这一节是六张图的读法说明。每张图按三件事写：</p>
+<ol type="1">
+<li><strong>一句话看懂</strong>——这张图在画什么；</li>
+<li><strong>怎么看</strong>——每条线、每个色块分别代表什么；</li>
+<li><strong>别被误导</strong>——最容易看错的地方。</li>
+</ol>
+<p>其中<strong>图 4 最重要</strong>：账面 380、现实 50 的那道断崖，全书的结论都挂在它上面。</p>
+</blockquote>
+<h3 id="图-1-退出价格曲线硬币基准">图 1　退出价格曲线（硬币基准）</h3>
+<p><img src="https://raw.githubusercontent.com/Sisyphuswan/grassroots-papers-by-Sisyphuswan/main/figure1.png" /></p>
+<ul>
+<li><strong>一句话看懂</strong>：横轴是”能赢多少”（<span class="math inline">\(G\)</span>），纵轴是”退出要花多少钱”。两条线张开 = 有得谈；合拢 = 谈崩。</li>
+<li><strong>三段几何怎么读</strong>：两条竖虚线把横轴切成三段——
+<ul>
+<li><strong>左段（<span class="math inline">\(G&lt;33.33\)</span>，粉）</strong>：黑线 <span class="math inline">\(B\)</span> 在灰线 <span class="math inline">\(M\)</span> <strong>之上</strong>，锅里没米。这叫<strong>结构性破裂</strong>（<span class="math inline">\(M&lt;B\)</span>）。</li>
+<li><strong>中段（<span class="math inline">\(33.33\le G&lt;42\)</span>，黄）</strong>：<span class="math inline">\(M\)</span> 已经高过 <span class="math inline">\(B\)</span>，但双方摩擦 <span class="math inline">\(2\Delta\)</span> 太大，两边凑不到一起。这叫<strong>心理性破裂</strong>。</li>
+<li><strong>右段（<span class="math inline">\(G\ge42\)</span>，绿）</strong>：摩擦被摊薄，终于出现开口，才可能成交。</li>
+</ul></li>
+<li><strong>四条线</strong>：黑线 <span class="math inline">\(B\)</span>（对方底线）与蓝线 <span class="math inline">\(r_{S}\)</span>（含摩擦的底线）从左向右下滑；灰线 <span class="math inline">\(M\)</span>（公平线）与绿线 <span class="math inline">\(r_{W}\)</span>（天花板）上升。橙色带 = 严格前景理论算出的”心甘区间”，<strong>紧贴蓝线</strong>——你的真实心甘比天花板低，换句话就是揭示了现实谈判的困境：弱势方愿意付的钱，往往刚刚够到、甚至达不到强势方加上心理溢价后的底线。</li>
+<li><strong>别被误导</strong>：中间那条虚点线是议价对半分的落点，只是”期望落点”，不是预测值。</li>
+</ul>
+<h3 id="图-2-剩余-vs-摩擦同轴">图 2　剩余 vs 摩擦（同轴）</h3>
+<p><img src="https://raw.githubusercontent.com/Sisyphuswan/grassroots-papers-by-Sisyphuswan/main/figure2.png" /></p>
+<ul>
+<li><strong>一句话看懂</strong>：把”锅里的米”（<span class="math inline">\(M-B\)</span>，一条斜率 1.5 的直线）和”双方的情绪饭量”（<span class="math inline">\(2\Delta\)</span>，越往右越平缓的绿曲线）画在同一把尺子上。米多过饭量就有得谈，被反超就谈崩。</li>
+<li><strong>几何直觉</strong>：红线要到 <span class="math inline">\(G=33.33\)</span> 才升过 0（这一段才”锅里有米”）；绿线一路缓升。两条线在 <span class="math inline">\(G=42\)</span> 交叉——<strong>交叉点右边才有宽度</strong>。</li>
+<li><strong>怎么看</strong>：蓝色带 = 心理上可谈的宽度（<span class="math inline">\(M-B-2\Delta\)</span>，还没扣墙）。<span class="math inline">\(G=45\)</span> 处只剩 4.08 宽——“刚能谈，一碰就碎”（刀刃区）；<span class="math inline">\(G&lt;42\)</span> 蓝带为零。土黄色区 = 摩擦只要再小一点就能救活的地带（<span class="math inline">\(33.33\)</span>–<span class="math inline">\(42\)</span>）。</li>
+<li><strong>纪律</strong>：<span class="math inline">\(M-B\)</span> 与 <span class="math inline">\(2\Delta\)</span> <strong>必须同轴同单位</strong>——这是这张图的全部意义，分开画就失去对照。</li>
+</ul>
+<h3 id="图-3-统一定理">图 3　统一定理</h3>
+<p><img src="https://raw.githubusercontent.com/Sisyphuswan/grassroots-papers-by-Sisyphuswan/main/K_fig3.png" /></p>
+<ul>
+<li><strong>一句话看懂</strong>：一条下坡线——能赢的越多，你愿意掏的”退出费”越少。线穿过 0 的那个位置就是<strong>进场门槛</strong>：赢头大到那个数，你一分钱都不肯掏了。</li>
+<li><strong>怎么看</strong>：两条线是同一件事的两种算法（蓝 = 对称权重，橙 = 前景理论 TK 权重）。绿色带 <span class="math inline">\(G\in[20,65]\)</span> 就是图 1 的观测窗口；把带子里的走势顺势延长，穿过 0 的点就是门槛。一张图同时回答”进场要多少”和”退出肯付多少”。</li>
+<li><strong>别被误导</strong>：门槛对概率权重不敏感——硬币是五五开，权重基本对消，两种算法只差 251 与 274（约 9%）。换成骰子（<span class="math inline">\(p=1/6\)</span>）权重不再对消，门槛就摊成一个带（820–900），不再是单点。</li>
+</ul>
+<h3 id="图-4-骰子-l4-墙全书关键图">图 4　骰子 L4 墙（全书关键图）</h3>
+<p><img src="https://raw.githubusercontent.com/Sisyphuswan/grassroots-papers-by-Sisyphuswan/main/K_fig4.png" /></p>
+<ul>
+<li><strong>一句话看懂</strong>：蓝线（你的真实底线 <span class="math inline">\(r_{S}\)</span>）从 80 多一路下滑；黄线（现实上限 <span class="math inline">\(r_{W}^{\prime}\)</span>）早早爬上去就被<strong>钉在 50 不动</strong>。两条线交叉之前（<span class="math inline">\(G&lt;305\)</span>），能谈的区间根本不存在——骰子局谈崩的全部原因就在这一张图里。</li>
+<li><strong>标题里的”L4”是什么</strong>：这是本模型自定的<strong>借用深度标记</strong>（见附录 O 层级表）。L4 = “完全新增的行为机制”（也就是那两道墙），不是借用经典理论；数字越大越偏离经典。</li>
+<li><strong>关键动作拆解</strong>（对应正文第四章的每个数）：
+<ul>
+<li><strong>断崖</strong>：账面天花板 380（高到画不进这张图）被”兜里只有 100”“心里只认 50”两道墙压到 50。这是 <span class="math inline">\(\min(\cdot)\)</span> 直接切换，不是曲线慢慢降下来的——所以叫”断崖式坍缩”。</li>
+<li><strong>交叉点</strong>：<span class="math inline">\(G&lt;305\)</span> 时蓝线始终在 50 之上，对方最少也要 50 多，区间是空的。</li>
+<li><strong>13 块的缝</strong>：<span class="math inline">\(G=400\)</span> 处蓝线掉到 36.7，黄线钉在 50 → 只剩 <span class="math inline">\([36.7,\ 50]\)</span>。正文说的”37–50”就是这两条线之间的缝。</li>
+<li><strong>要价 60 为什么被拒</strong>：60 在黄线（50）<strong>之上</strong>——不是”太贵”，是”越界”。真实天花板早就不是理论上的 380。</li>
+</ul></li>
+</ul>
+<h3 id="图-5-骰子局全走廊">图 5　骰子局全走廊</h3>
+<p><img src="https://raw.githubusercontent.com/Sisyphuswan/grassroots-papers-by-Sisyphuswan/main/figure3.png" /></p>
+<ul>
+<li><strong>一句话看懂</strong>：把赢头 <span class="math inline">\(G\)</span> 从左往右排开，四个颜色段就是四种结局：红（锅里没米）、黄（端不动锅）、紫（想签却掏不出）、绿（真能成交）。</li>
+<li><strong>怎么看</strong>：三条分界线 71 / 87.5 / 305 依次划开四段——
+<ul>
+<li><strong>红（<span class="math inline">\(G&lt;71\)</span>）</strong>：<span class="math inline">\(M&lt;B\)</span>，结构性破裂，锅里没米。</li>
+<li><strong>黄（<span class="math inline">\(71\le G&lt;87.5\)</span>）</strong>：<span class="math inline">\(M\ge B\)</span> 但 <span class="math inline">\(2\Delta&gt;M-B\)</span>，心理性破裂，端不动锅。</li>
+<li><strong>紫（<span class="math inline">\(87.5\le G&lt;305\)</span>）</strong>：最容易看错的一段。<strong>纸面区间其实存在</strong>（浅蓝虚线 <span class="math inline">\(M-\Delta\)</span> 一路冲到 380），但你的真实底线 <span class="math inline">\(r_{S}\)</span> 已经高过心理墙 50——这是<strong>约束性破裂</strong>：不是没得谈，是想签却掏不出。这一段就是”掀桌子”的高发区。</li>
+<li><strong>绿（<span class="math inline">\(G\ge305\)</span>）</strong>：<span class="math inline">\(r_{S}\)</span> 终于跌破 50，成交带只剩 <span class="math inline">\([36.7,\ 50]\)</span> 那 13 块。</li>
+</ul></li>
+<li><strong>用途</strong>：拿到任何”赢 <span class="math inline">\(G\)</span> 输 <span class="math inline">\(L\)</span>“的局，先在横轴定位 <span class="math inline">\(G\)</span>，看落在哪个颜色段，就知道会在哪一步谈崩。</li>
+</ul>
+<h3 id="图-6-动态弹性-vs-根号-vs-cpt骰子局扩展">图 6　动态弹性 vs 根号 vs CPT（骰子局扩展）</h3>
+<p><img src="https://raw.githubusercontent.com/Sisyphuswan/grassroots-papers-by-Sisyphuswan/main/fig6_dynamic_vs_cpt.png" /></p>
+<ul>
+<li><strong>一句话看懂</strong>：同一个骰子局，换三把不同的尺子量”什么时候开窗”，得到三个开窗点——蓝（根号）最晚，橙（动态弹性）居中，绿（CPT）最早。</li>
+<li><strong>怎么看</strong>：
+<ul>
+<li><strong>蓝 <span class="math inline">\(B+\sqrt{G}\)</span></strong>（正文主模型）：开窗点 <span class="math inline">\(G_{L4}=304.7\)</span>，<span class="math inline">\(G=400\)</span> 时下界 36.7。</li>
+<li><strong>橙 <span class="math inline">\(B+\Delta_{\mathrm{dyn}}\)</span></strong>（动态弹性，见附录 J）：开窗点 <span class="math inline">\(\approx258\)</span>，<span class="math inline">\(G=400\)</span> 时下界 27.1。</li>
+<li><strong>绿带（CPT 严格基准）</strong>：开窗点 <span class="math inline">\(\approx250\)</span>，<span class="math inline">\(G=400\)</span> 时下界 16.7、心甘上限 23.3–29.4。</li>
+</ul></li>
+<li><strong>别被误导</strong>：三把尺子在这件事上<strong>完全一致</strong>——账面 380 的天花板是幻觉，差别只在”缝有多宽、多早开”。橙色下界 27.1 落在绿色 CPT 带内，说明动态弹性与 CPT 相容；蓝色下界 36.7 超出 CPT 带上缘（<span class="math inline">\(+25\%\)</span>），说明根号尺子在大局里要价偏高。详见附录 J。</li>
+</ul>
+<h2 id="附录-l-场景填法建议">附录 L　场景填法建议</h2>
+<blockquote>
+<p><strong>大白话。</strong> 这一节是<strong>防填错指南</strong>。</p>
+<p>前面所有算法都要求两个输入：本金（可能亏多少）和好处（可能赢多少）。现实场景里这两个数不会直接写在你面前，得自己填。而填错本金，后面全部算错。</p>
+<p>所以这里给五个典型纠纷，每个说清三件事：</p>
+<ol type="1">
+<li>“本金”该填什么；</li>
+<li>“好处”该填什么；</li>
+<li>大家最常填错的是什么。</li>
+</ol>
+</blockquote>
+<p><strong>填表原则</strong>：本金填”<strong>真会掏出去的现金</strong>”，不填”账面上的数字”。这是最常见的错源。</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>场景</th>
+<th>本金（最坏现金损失）</th>
+<th>能赢的（最好结果）</th>
+<th>把握</th>
+<th>常见填错</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>小供应商长账期</td>
+<td>现金流缺口（非应收总额）</td>
+<td>客户毛利 × 预期合作期</td>
+<td>续单概率</td>
+<td>用应收总额会高估本金数倍</td>
+</tr>
+<tr>
+<td>债务重组</td>
+<td>可动用现金</td>
+<td>免债额</td>
+<td>全额追偿概率</td>
+<td>把资产总额当本金</td>
+</tr>
+<tr>
+<td>租客涨租</td>
+<td>年涨幅 + 搬家成本</td>
+<td>搬家成本 + 新旧差</td>
+<td>房东真换客概率</td>
+<td>漏搬家成本</td>
+</tr>
+<tr>
+<td>劳工降薪</td>
+<td>年降幅</td>
+<td>在岗收入 × 替代失业期</td>
+<td>真裁员概率</td>
+<td>把”面子”计入本金</td>
+</tr>
+<tr>
+<td>创业者苛刻条款</td>
+<td>出让股权 × 当前估值</td>
+<td>存活概率 × 下轮估值增量</td>
+<td>下轮成交概率</td>
+<td>用情感估值代替现金估值</td>
+</tr>
+</tbody>
+</table>
+<h2 id="附录-m-实验设计与可证伪预测">附录 M　实验设计与可证伪预测</h2>
+<blockquote>
+<p><strong>大白话。</strong> 这一节给出<strong>五条可以被实验检验的预测</strong>。</p>
+<p>这是它和”讲了个故事”的区别：故事怎么说都行，预测不行——做出来对，模型加分；做出来不对，模型就该改。</p>
+<p>五条分别针对：公平局的支付意愿、心理标度的切换点、临界区的脆弱性、入场门槛的倍数、以及两道墙是否存在。</p>
+</blockquote>
+<ol type="1">
+<li><strong>公平局意愿</strong>：<span class="math inline">\(\mathrm{EV}=0\)</span> 时退出意愿 <span class="math inline">\(\approx0.9\times25\approx22\)</span>–<span class="math inline">\(23\)</span>，且不随 <span class="math inline">\(M\)</span>（即 90）上移。检验方式：固定 <span class="math inline">\(\mathrm{EV}=0\)</span>，只变动 <span class="math inline">\(G\)</span>。</li>
+<li><strong><span class="math inline">\(\theta(u)\)</span> 预测</strong>：<span class="math inline">\(u\)</span> 越小，绑定上限越早从 <span class="math inline">\(M-\Delta\)</span> 切换为 <span class="math inline">\(S(u)\)</span>（对照行见附录 E）。</li>
+<li><strong>刀刃区</strong>：<span class="math inline">\(G\)</span> 刚过 <span class="math inline">\(G_{\psi}\)</span> 时成交率跳升但脆弱（成交宽度 <span class="math inline">\(\mathrm{width}(45)\approx4\)</span>）。预期成交率曲线在 42 处陡升、45 处仍低。</li>
+<li><strong>入场弹性</strong>：50/50 局的门槛 <span class="math inline">\(\approx2.5\times\)</span>（报告带 2.51–2.74）；赔率翻倍时补偿 <span class="math inline">\(\times2.2\)</span>。</li>
+<li><strong>墙显著性</strong>：骰子局要价 60 的拒绝率，应随”本金框架”（现金 vs 应收）显著变化；要价 40 的接受率应显著高于 60，尽管两者都低于账面的 380。</li>
+</ol>
+<p><strong>上面这五条用白话再说一遍</strong>：</p>
+<ol type="1">
+<li>公平局里，人愿意付的钱应该稳定在 22 左右，<strong>不会因为赢头变大而跟着涨</strong>。</li>
+<li>局越公平，先卡住人的越可能是”行情价”，而不是那两道墙。</li>
+<li><span class="math inline">\(G\)</span> 刚过临界点时，成交率会跳起来但很脆——<strong>刚能谈，一碰就碎</strong>。</li>
+<li>50/50 的局，门槛大约是本金的 2.5 倍；赔率翻倍，要价涨 2.2 倍。</li>
+<li>骰子局里，要价 60 被拒、要价 37可能被接受——<strong>尽管两个数都远低于账面的 380</strong>。这一条最能说明”墙”是真的存在。</li>
+</ol>
+<p><strong>实验方法</strong>：激励相容的实验室谈判（用二元彩票 + 退出选项），事前预注册；报告时给 CPT 带，不给单点。</p>
+<h2 id="附录-n-参数表措辞纪律与来源注记">附录 N　参数表、措辞纪律与来源注记</h2>
+<blockquote>
+<p><strong>大白话。</strong> 这一节是<strong>质检章</strong>，三件事：</p>
+<ol type="1">
+<li><strong>参数从哪来</strong>——列出的心理学参数都是文献标准值（TK92），不是自己凑的；</li>
+<li><strong>哪些话不许说</strong>——每条禁令都对应一个曾经差点犯的错，写下来防止复发；</li>
+<li><strong>数字谁算的</strong>——关键结论的来源与版本记录。</li>
+</ol>
+<p>换句话说，前面所有章节的可信度，都挂在这一节上。</p>
+</blockquote>
+<h3 id="n.1-参数表">N.1 参数表</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值</th>
+<th>来源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(\alpha\)</span></td>
+<td>0.88</td>
+<td>TK92</td>
+<td>感受曲率，越小越”边际递减”</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\lambda\)</span></td>
+<td>2.25</td>
+<td>TK92</td>
+<td>损失厌恶，赔 1 块的痛 ≈ 赚 2.25 块的爽</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\gamma\)</span></td>
+<td>0.61</td>
+<td>TK92</td>
+<td>收益侧概率权重曲率</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\delta\)</span></td>
+<td>0.69</td>
+<td>TK92</td>
+<td>损失侧概率权重曲率</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\kappa\)</span></td>
+<td>1</td>
+<td>本模型</td>
+<td>公平约束系数，默认”赢头全归对方”</td>
+</tr>
+<tr>
+<td><span class="math inline">\(W_{\mathrm{psy}}\)</span> 系数</td>
+<td>0.5</td>
+<td>本模型（附录 D）</td>
+<td>半本金墙</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\theta(u)\)</span></td>
+<td>0.25–0.5</td>
+<td>本模型（附录 E）</td>
+<td>行情系数，双锚插值</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\beta\)</span></td>
+<td>场景定</td>
+<td>本模型（附录 C）</td>
+<td>议价能力，0.5 为对半分</td>
+</tr>
+</tbody>
+</table>
+<p><strong>一句提醒</strong>：<span class="math inline">\(\alpha,\lambda,\gamma,\delta\)</span> 四个都是<strong>引用文献的标准值</strong>，不是本模型自造的。改这四个数等于改”人的心理”，不是改模型。</p>
+<h3 id="n.2-措辞纪律哪些话不许说">N.2 措辞纪律（哪些话不许说）</h3>
+<p>每条禁令都对应一个曾经差点犯的错，写下来防止复发：</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>不许说</th>
+<th>应该说</th>
+<th>为什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“<span class="math inline">\(\Delta=\sqrt{G}\)</span> 是定理”</td>
+<td>“<span class="math inline">\(\Delta=\sqrt{G}\)</span> 是<strong>启发式</strong>”</td>
+<td>它是为便于心算选的经验公式，没有理论推导</td>
+</tr>
+<tr>
+<td>“进场门槛是 2.5 倍”</td>
+<td>“约 2.5 倍（精确 2.51，全参数 2.74）”</td>
+<td>2.5 是心算取整，报告时要给带</td>
+</tr>
+<tr>
+<td>“两墙结构性相撞”</td>
+<td>“在这两个局上恰好撞上”</td>
+<td>是标定的巧合，不是机制主张</td>
+</tr>
+<tr>
+<td>“对偶定理”</td>
+<td>“<strong>对偶观察</strong>”</td>
+<td>两侧伸缩规律不同，不能称为同一个定理</td>
+</tr>
+<tr>
+<td>“自相似性质”</td>
+<td>“<strong>参数巧合</strong>”</td>
+<td>换骰子局立刻分开，模型不依赖它</td>
+</tr>
+<tr>
+<td>“CPT 验证了本模型”</td>
+<td>“<strong>内部一致性检查</strong>”</td>
+<td>两者同源，不能互相验证</td>
+</tr>
+</tbody>
+</table>
+<h3 id="n.3-来源注记与版本记录">N.3 来源注记与版本记录</h3>
+<ul>
+<li><strong>心理参数</strong>：Tversky &amp; Kahneman (1992)，即 TK92。全部沿用其公开发表的标定点。</li>
+<li><strong>数值计算</strong>：本模型中所有数值（含附录 I 三张表、附录 F 数值梯、附录 J 动态弹性）均由作者复算，可用一张计算器重现。</li>
+<li><strong>v2.5 变更</strong>：<span class="math inline">\(\theta\)</span> 与 <span class="math inline">\(W_{\mathrm{psy}}\)</span> 分列（此前共用字母）；附录 E 的 <span class="math inline">\(\theta(u)\)</span> 曲线为本版新增。</li>
+<li><strong>v2.501 变更</strong>：仅格式与术语整理，不动结论。</li>
+</ul>
+<p><strong>写作声明</strong>：本模型的核心手法是”在经典框架上加一层行为修正”。凡是借用自文献的部分，附录 O 都有对应标注；凡是本模型新增的部分，都标为启发式或报告带，不声称是定理。</p>
+<h2 id="附录-o-理论血缘darh-与经典的对应">附录 O　理论血缘：DARH 与经典的对应</h2>
+<p>本文不替代任何经典理论，而是将其扩展、具体化或解释现实中的偏离。作为一种可能性的解释构架，下表标注每一处借用与推演。</p>
+<p><strong>表格怎么读</strong>：<strong>层级</strong>列是借用深度——L0 = 完全沿用经典；L2 = 借框架但改参数含义；L3 = 类比式扩展；L4 = 本模型新增的行为机制。数字越大，偏离经典越远。</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 25%" />
+<col style="width: 53%" />
+<col style="width: 2%" />
+</colgroup>
+<thead>
+<tr>
+<th>经典文献</th>
+<th>原理论</th>
+<th>DARH 的对应与扩展</th>
+<th>层级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rubinstein (1982) 交替出价模型</td>
+<td>交替出价中的时间贴现因子 <span class="math inline">\(\delta\)</span></td>
+<td>用心理暴露量 <span class="math inline">\(S\)</span> 驱动的溢价 <span class="math inline">\(\Delta\)</span>，类比并重新解释理性贴现对谈判空间的压缩作用</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>Nash (1950) 议价解</td>
+<td>最大化 <span class="math inline">\((r_S - C)^\theta (r_W - C)^{1-\theta}\)</span> 的议价解</td>
+<td>将经典可行集压缩为随 <span class="math inline">\(S\)</span> 漂移的行为区间 <span class="math inline">\([B+\Delta,\ M-\Delta]\)</span>——保留 Nash 结构的为其线性化近似，注入行为摩擦</td>
+<td>L2, L3</td>
+</tr>
+<tr>
+<td>Fehr–Schmidt (1999) 不公平厌恶</td>
+<td>厌恶不利不平等的参数 <span class="math inline">\(\alpha\)</span></td>
+<td>将 <span class="math inline">\(\alpha\)</span> 具体化为可校准的硬性公平天花板 <span class="math inline">\(M\)</span>——把抽象参数落地为可观测的红线</td>
+<td>L2</td>
+</tr>
+<tr>
+<td>Kahneman–Tversky (1979, 1992) 前景理论</td>
+<td>单人决策下的价值函数与决策权重</td>
+<td>不替代 CPT，而是将其从“单人决策”扩展到“双人谈判”，并把损失厌恶推进到谈判破裂诊断</td>
+<td>L0, L2</td>
+</tr>
+<tr>
+<td>Myerson (1981) 最优机制</td>
+<td>最优机制把对方压榨到信息租金极限</td>
+<td>用双层（及三层）破裂诊断指出：公平与心理摩擦、现实墙，常使现实谈判在达到理论极限前就已失败——补最优机制的“行为盲区”</td>
+<td>L4</td>
+</tr>
+<tr>
+<td>ZOPA / BATNA (Fisher &amp; Ury 1981)</td>
+<td>双方保留价之间的可成交区间；替代方案决定谈判力</td>
+<td>“双边谈判区间”的直接前身；本文增量：给区间两端注入行为摩擦 <span class="math inline">\(\sqrt{G}\)</span>，并给出破裂分型诊断</td>
+<td>L2</td>
+</tr>
+<tr>
+<td>Thaler (1985, 1999) 心理账户</td>
+<td>资金按心理账户分类，损失敏感度依账户而变</td>
+<td><span class="math inline">\(W_{\text{psy}} = 0.5L\)</span> 红线与约束性破裂的直接来源（附录 D）</td>
+<td>L4</td>
+</tr>
+<tr>
+<td>Gigerenzer et al. (1999) 快速节俭启发式</td>
+<td>有限理性下用最少信息做决策的简单规则</td>
+<td><span class="math inline">\(\Delta=\sqrt{G}\)</span> 把 <span class="math inline">\(G_0\)</span> 标准化为 1 的取舍属此类——用可口算的规则换取认知负荷最小化（附录 A.3）</td>
+<td>L3</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>DARH v2.5001 学术通俗合并版 · 开放修正协议 OCL v1.0</strong><br />
+讨论的价值不在于定论，而在于能否被更好地修正。</p>
+<p>本人并非学者或相关领域研究人员，只是在读到某些理论后希望在自己以了解此理论基础上继续扩展，提出个人理解范围内较为合适的解释。写作过程中使用了 AI 工具辅助整理思路、推演部分复杂的方程，以及对部分文字表达进行规范化润色。所有核心观点、结构取舍、伦理边界与最终定稿，均由作者本人负责。</p>
+<p>本附录遵循 OCL v1.0：“讨论的价值不在于定论，而在于能否被更好地修正。”</p>
+<p><strong>附录完。</strong></p>
+</body>
+</html>
