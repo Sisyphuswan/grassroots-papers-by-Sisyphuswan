@@ -20,7 +20,8 @@ I open-source all thoughts, derivations, and charts, hoping this can serve as a 
 
 ## 📚 著作 / Monographs
 
-- **《权力拓扑学》 / *The Topology of Power***：[中文版 PDF](./权力拓扑学.pdf) | [English Edition PDF](./The%20Topology%20of%20Power.pdf)
-
+- **《权力拓扑学》 / *The Topology of Power***
+  - **中文版**：[在线阅读](https://sisyphuswan.github.io/grassroots-papers-by-Sisyphuswan/%E6%9D%83%E5%8A%9B%E6%8B%93%E6%89%91%E5%AD%A6.pdf) | [直接下载 PDF](https://github.com/Sisyphuswan/grassroots-papers-by-Sisyphuswan/raw/main/%E6%9D%83%E5%8A%9B%E6%8B%93%E6%89%91%E5%AD%A6.pdf)
+  - **English Edition**：[Read Online](https://sisyphuswan.github.io/grassroots-papers-by-Sisyphuswan/The%20Topology%20of%20Power.pdf) | [Download PDF](https://github.com/Sisyphuswan/grassroots-papers-by-Sisyphuswan/raw/main/The%20Topology%20of%20Power.pdf)
     
 
