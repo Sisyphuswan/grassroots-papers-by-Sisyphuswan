@@ -14,12 +14,16 @@ I open-source all thoughts, derivations, and charts, hoping this can serve as a 
 ## 📂 仓库目录说明 / Repository Contents
 ## 📄 文章列表 / Articles
 ## 📚 草根论文 / Grassroots Papers
-- **《一个掷硬币的故事：DARH 双锚点-根号波动启发式模型》 / *A Coin-Flip Story: The Dual-Anchor Root Heuristic Model (DARH)*** [![DOI](https://zenodo.org/badge/DOI/10.5281/10.5281/zenodo.24583056.svg)](https://doi.org/10.5281/10.5281/zenodo.24583056)
+- **《一个掷硬币的故事：DARH 双锚点-根号波动启发式模型》 / *A Coin-Flip Story: The Dual-Anchor Root Heuristic Model (DARH)*** [![DOI](https://zenodo.org/badge/DOI/10.5281/10.5281/zenodo.24583056.svg)](https://doi.org/10.5281/zenodo.24583056)
   - **中文版**：[在线阅读](https://sisyphuswan.github.io/grassroots-papers-by-Sisyphuswan/DARH%20%E5%8F%8C%E9%94%9A%E7%82%B9-%E6%A0%B9%E5%8F%B7%E6%B3%A2%E5%8A%A8%E5%90%AF%E5%8F%91%E5%BC%8F%E6%A8%A1%E5%9E%8B_v2.7.pdf) | [直接下载 PDF](https://github.com/Sisyphuswan/grassroots-papers-by-Sisyphuswan/raw/main/DARH%20%E5%8F%8C%E9%94%9A%E7%82%B9-%E6%A0%B9%E5%8F%B7%E6%B3%A2%E5%8A%A8%E5%90%AF%E5%8F%91%E5%BC%8F%E6%A8%A1%E5%9E%8B_v2.7.pdf)
   - **English Edition**: [Read Online](https://sisyphuswan.github.io/grassroots-papers-by-Sisyphuswan/The%20Dual-Anchor%20Root%20Heuristic%20Model_v2.7.pdf) | [Download PDF](https://github.com/Sisyphuswan/grassroots-papers-by-Sisyphuswan/raw/main/The%20Dual-Anchor%20Root%20Heuristic%20Model_v2.7.pdf) | [Zenodo Archive (DOI)](https://doi.org/10.5281/zenodo.24583056)
 
 
+
+
 - **📚随笔/ Essays**: [迷雾、天使与永不消散的车辙](https://sisyphuswan.github.io/grassroots-papers-by-Sisyphuswan/迷雾、天使与永不消散的车辙%20.html) · **English edition**: [Fog, the Angel, and the Indelible Ruts](https://sisyphuswan.github.io/grassroots-papers-by-Sisyphuswan/Fog%2C%20the%20Angel%2C%20and%20the%20Indelible%20Ruts.html)
+
+
 
 ## 📚 著作 / Monographs
 
